@@ -1,6 +1,7 @@
 """Render turntables for every model the Dex shows (#457).
 
 Usage: python pipeline/render/batch.py [--frames 36] [--size 384] [--only <model> ...] [--force]
+                                       [--paint <name>=<r>,<g>,<b>]
 
 Works out each entry's model (and each variant that is a hull of its own), finds its
 source (the hull folder's FBX, an FBX converted from its DAE by dae_to_fbx.py, or a
@@ -9,11 +10,16 @@ model can't take the run down. Frames go to pipeline/out/turntables/<model>/, an
 model whose frames are already complete is skipped, so a stopped run resumes. Failed
 models get one retry; whatever still fails, or has no source, is listed in
 pipeline/out/turntables/report.json with the reason.
+
+--paint renders the chosen models again with their war paint (the _TEAM mask) in a
+faction's colour, into pipeline/out/turntables/<model>__<name>/: the Terran Empire's
+yellow on the Federation's TOS hulls.
 """
 from __future__ import annotations
 
 import argparse
 import json
+import os
 import re
 import subprocess
 import sys
@@ -46,7 +52,9 @@ ALIASES = {
 # States added to the ship as built: the pose the game shows it in most of the time.
 # Probes and sensor satellites deploy as soon as they're launched.
 DEPLOYED = re.compile(r"_(probe|sensorsatellite)$")
-EXTRA_STATES = {"fed_ENT_VUL_dkyr": ["RepairDo"]}  # warp ring raised
+# The D'kyr with its warp ring raised and its shuttle docked in it (RepairStart: the
+# Shuttle joint shown and the Close animation held at its end).
+EXTRA_STATES = {"fed_ENT_VUL_dkyr": ["RepairStart"]}
 
 
 def models() -> dict[str, dict]:
@@ -71,6 +79,8 @@ def models() -> dict[str, dict]:
                 # Subsystem variants: one render per model state the subsystem switches to.
                 for toggle in ship_subsystems(s["era"]).get(hull, []):
                     entry["states"][toggle["key"]] = toggle["madstate"]
+                    if toggle.get("addons"):
+                        entry.setdefault("addons", {})[toggle["key"]] = toggle["addons"]
     return out
 
 
@@ -80,8 +90,16 @@ def jobs(model: str, info: dict) -> list[tuple[str, list[str], list[str]]]:
     base = ["Normal"] + (["Open"] if DEPLOYED.search(hull) else []) + EXTRA_STATES.get(hull, [])
     out = [(model, *combined(era, hull, base))]
     for key, state in info["states"].items():
-        out.append((f"{model}@{key}", *combined(era, hull, base + [state])))
+        out.append((f"{model}@{key}", *combined(era, hull, base + ([state] if state else []))))
+        if key in info.get("addons", {}):
+            # Structures added at a hardpoint (the Borg Outpost's stages): their own DAEs,
+            # built at the model's origin, where the hardpoint is.
+            ADDONS[f"{model}@{key}"] = [str(SHIP_FILES / a / f"{a}.DAE") for a in info["addons"][key]]
     return out
+
+
+# Output key -> extra DAE files rendered with the model (DEX_EXTRA_MODELS).
+ADDONS: dict[str, list[str]] = {}
 
 
 def source(model: str) -> tuple[Path, list[Path]] | None:
@@ -116,8 +134,11 @@ def _render_once(model: str, folder: Path, fbx: Path, frames: int, size: int, le
     cmd = [str(BLENDER), "-b", "--factory-startup", "-P", str(SCRIPT), "--",
            str(folder), str(out), str(frames), str(size), str(fbx), str(length or ""), ",".join(hidden),
            ",".join(poses), "trust" if trust else ""]
+    env = dict(os.environ)
+    if model in ADDONS:
+        env["DEX_EXTRA_MODELS"] = "|".join(ADDONS[model])
     try:
-        run = subprocess.run(cmd, capture_output=True, text=True, timeout=300)
+        run = subprocess.run(cmd, capture_output=True, text=True, timeout=300, env=env)
     except subprocess.TimeoutExpired:
         return False, 0, "timed out after 300 s"
     text = run.stdout + run.stderr
@@ -158,7 +179,13 @@ def main():
     ap.add_argument("--size", type=int, default=384)
     ap.add_argument("--only", nargs="*")
     ap.add_argument("--force", action="store_true")
+    ap.add_argument("--paint", help="<name>=<r>,<g>,<b>: war paint in that linear colour")
     args = ap.parse_args()
+    suffix = ""
+    if args.paint:
+        name, colour = args.paint.split("=")
+        os.environ["DEX_TEAM_COLOUR"] = colour  # turntable.py reads it in each Blender run
+        suffix = f"__{name}"
 
     todo = models()
     if args.only:
@@ -172,6 +199,7 @@ def main():
             report["noSource"][model] = info["hulls"]
             continue
         for key, hidden, poses in jobs(model, info):
+            key += suffix
             if complete(key, args.frames) and not args.force:
                 report["skipped"].append(key)
             else:
@@ -198,9 +226,9 @@ def main():
             break
     report["failed"] = failures
     OUT.mkdir(parents=True, exist_ok=True)
-    (OUT / "report.json").write_text(json.dumps(report, indent=1) + "\n", encoding="utf-8")
+    (OUT / f"report{suffix}.json").write_text(json.dumps(report, indent=1) + "\n", encoding="utf-8")
     print(f"Done in {time.time() - start:.0f} s: {len(report['rendered'])} rendered, {len(report['skipped'])} already done, "
-          f"{len(failures)} failed, {len(report['noSource'])} without a source. Report: {OUT / 'report.json'}")
+          f"{len(failures)} failed, {len(report['noSource'])} without a source. Report: {OUT / f'report{suffix}.json'}")
     sys.exit(1 if failures else 0)
 
 

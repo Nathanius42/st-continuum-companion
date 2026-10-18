@@ -8,7 +8,7 @@ The lettering on the hull is authoritative, and the lua's names were corrected t
 
 Lists that repeat one placeholder (the Brisbane and Prometheus vector parts are all
 "Vector Alpha") name no ships and are left out. stc_mirrornames, the Mirror Universe
-names, are not shown.
+names (I.S.S.), name the Terran Empire's ships (mirror=True).
 """
 from __future__ import annotations
 
@@ -46,9 +46,10 @@ def _table(text: str, name: str) -> dict[str, list[str]]:
 
 
 @lru_cache(maxsize=None)
-def _names(era: str) -> dict[str, list[str]]:
+def _names(era: str, mirror: bool = False) -> dict[str, list[str]]:
     path = HWRM / ERA_FOLDERS[era] / NAMES
-    return {k.lower(): v for k, v in _table(_read(path), "stc_shipnames").items()} if path.exists() else {}
+    table = "stc_mirrornames" if mirror else "stc_shipnames"
+    return {k.lower(): v for k, v in _table(_read(path), table).items()} if path.exists() else {}
 
 
 @lru_cache(maxsize=None)
@@ -57,9 +58,10 @@ def _registries() -> dict[str, list[str | None]]:
     return {k.lower(): v for k, v in data.items() if not k.startswith("$")}
 
 
-def notable_ships(era: str, hull: str) -> list[dict]:
-    """[{name, registry?}] in the game's order; empty when the class has no named ships."""
-    names = [n for n in _names(era).get(hull.lower(), []) if n]
+def notable_ships(era: str, hull: str, mirror: bool = False) -> list[dict]:
+    """[{name, registry?}] in the game's order; empty when the class has no named ships.
+    mirror: the Mirror Universe's names for the class, as the Terran Empire names it."""
+    names = [n for n in _names(era, mirror).get(hull.lower(), []) if n]
     if len(set(names)) <= 1 and len(names) > 1:
         return []  # one placeholder repeated
     regs = _registries().get(hull.lower(), [])

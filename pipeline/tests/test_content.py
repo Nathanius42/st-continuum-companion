@@ -40,7 +40,7 @@ def test_overlay_fills_a_missing_description_and_derives_auto_fields():
 def test_every_overlay_entry_is_well_formed():
     for hull, body in overlays().items():
         assert set(body) <= {"subtitle", "description", "dimensions", "source"}, hull
-        assert set(body.get("description", {})) <= set(FIELDS), hull
+        assert set(body.get("description", {})) <= set(FIELDS) | {"aboard"}, hull
         summary = body.get("description", {}).get("summary")
         if summary:
             assert len(summary) >= 60, hull

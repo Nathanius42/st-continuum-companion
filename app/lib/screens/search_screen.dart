@@ -26,11 +26,16 @@ class SearchScreen extends StatefulWidget {
     required this.data,
     this.onPick,
     this.title = 'Search',
+    this.initialQuery = const ShipQuery(),
   });
 
   final FrontPageData data;
   final ValueChanged<Ship>? onPick;
   final String title;
+
+  /// Filters already set when the screen opens, such as a ship page's tag
+  /// (Keeper) showing every ship with it.
+  final ShipQuery initialQuery;
 
   @override
   State<SearchScreen> createState() => _SearchScreenState();
@@ -127,11 +132,12 @@ List<_Category> _categories(ShipRepository repository, ShipQuery query) {
 
 class _SearchScreenState extends State<SearchScreen> {
   final _text = TextEditingController();
-  ShipQuery _query = const ShipQuery();
+  late ShipQuery _query = widget.initialQuery;
   Ship? _selected;
 
-  /// The filter category shown in the panel.
-  int _category = 0;
+  /// The filter category shown in the panel: In game when the screen opens
+  /// on a tag, so the chosen option is in view.
+  late int _category = widget.initialQuery.availability.isEmpty ? 0 : 5;
 
   /// On a phone: whether the category's options are open over the results.
   bool _filtersOpen = false;

@@ -62,6 +62,27 @@
   "frameWidth": 164,
   "frameHeight": 318
  },
+ "brg_TNG_outpost@stage-1": {
+  "sheet": "assets/turntables/brg_TNG_outpost--stage-1.webp",
+  "frames": 18,
+  "columns": 5,
+  "frameWidth": 256,
+  "frameHeight": 278
+ },
+ "brg_TNG_outpost@stage-2": {
+  "sheet": "assets/turntables/brg_TNG_outpost--stage-2.webp",
+  "frames": 18,
+  "columns": 5,
+  "frameWidth": 236,
+  "frameHeight": 324
+ },
+ "brg_TNG_outpost@stage-3": {
+  "sheet": "assets/turntables/brg_TNG_outpost--stage-3.webp",
+  "frames": 18,
+  "columns": 6,
+  "frameWidth": 206,
+  "frameHeight": 342
+ },
  "brg_TNG_probe": {
   "sheet": "assets/turntables/brg_TNG_probe.webp",
   "frames": 18,
@@ -583,9 +604,9 @@
  "fed_ENT_VUL_dkyr": {
   "sheet": "assets/turntables/fed_ENT_VUL_dkyr.webp",
   "frames": 18,
-  "columns": 3,
+  "columns": 4,
   "frameWidth": 256,
-  "frameHeight": 113
+  "frameHeight": 133
  },
  "fed_ENT_VUL_dkyr_shuttle": {
   "sheet": "assets/turntables/fed_ENT_VUL_dkyr_shuttle.webp",
@@ -1322,8 +1343,22 @@
   "frameWidth": 256,
   "frameHeight": 129
  },
+ "fed_TOS_DY750__terran": {
+  "sheet": "assets/turntables/fed_TOS_DY750__terran.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 129
+ },
  "fed_TOS_archer": {
   "sheet": "assets/turntables/fed_TOS_archer.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 128
+ },
+ "fed_TOS_archer__terran": {
+  "sheet": "assets/turntables/fed_TOS_archer__terran.webp",
   "frames": 18,
   "columns": 3,
   "frameWidth": 256,
@@ -1336,8 +1371,22 @@
   "frameWidth": 256,
   "frameHeight": 135
  },
+ "fed_TOS_ares__terran": {
+  "sheet": "assets/turntables/fed_TOS_ares__terran.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 135
+ },
  "fed_TOS_constitution": {
   "sheet": "assets/turntables/fed_TOS_constitution.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 148
+ },
+ "fed_TOS_constitution__terran": {
+  "sheet": "assets/turntables/fed_TOS_constitution__terran.webp",
   "frames": 18,
   "columns": 4,
   "frameWidth": 256,
@@ -1350,8 +1399,22 @@
   "frameWidth": 256,
   "frameHeight": 167
  },
+ "fed_TOS_constructor__terran": {
+  "sheet": "assets/turntables/fed_TOS_constructor__terran.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 167
+ },
  "fed_TOS_coyote": {
   "sheet": "assets/turntables/fed_TOS_coyote.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 126
+ },
+ "fed_TOS_coyote__terran": {
+  "sheet": "assets/turntables/fed_TOS_coyote__terran.webp",
   "frames": 18,
   "columns": 3,
   "frameWidth": 256,
@@ -1364,8 +1427,22 @@
   "frameWidth": 256,
   "frameHeight": 114
  },
+ "fed_TOS_detroyat__terran": {
+  "sheet": "assets/turntables/fed_TOS_detroyat__terran.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 114
+ },
  "fed_TOS_dreadnought": {
   "sheet": "assets/turntables/fed_TOS_dreadnought.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 113
+ },
+ "fed_TOS_dreadnought__terran": {
+  "sheet": "assets/turntables/fed_TOS_dreadnought__terran.webp",
   "frames": 18,
   "columns": 3,
   "frameWidth": 256,
@@ -1378,8 +1455,22 @@
   "frameWidth": 256,
   "frameHeight": 148
  },
+ "fed_TOS_flagship__terran": {
+  "sheet": "assets/turntables/fed_TOS_flagship__terran.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 148
+ },
  "fed_TOS_lightning": {
   "sheet": "assets/turntables/fed_TOS_lightning.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 133
+ },
+ "fed_TOS_lightning__terran": {
+  "sheet": "assets/turntables/fed_TOS_lightning__terran.webp",
   "frames": 18,
   "columns": 4,
   "frameWidth": 256,
@@ -1392,8 +1483,22 @@
   "frameWidth": 256,
   "frameHeight": 124
  },
+ "fed_TOS_mcquarrie__terran": {
+  "sheet": "assets/turntables/fed_TOS_mcquarrie__terran.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 124
+ },
  "fed_TOS_outpost": {
   "sheet": "assets/turntables/fed_TOS_outpost.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 146
+ },
+ "fed_TOS_outpost__terran": {
+  "sheet": "assets/turntables/fed_TOS_outpost__terran.webp",
   "frames": 18,
   "columns": 4,
   "frameWidth": 256,
@@ -1406,6 +1511,13 @@
   "frameWidth": 256,
   "frameHeight": 166
  },
+ "fed_TOS_resourcecollector__terran": {
+  "sheet": "assets/turntables/fed_TOS_resourcecollector__terran.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 166
+ },
  "fed_TOS_resourcecontroller": {
   "sheet": "assets/turntables/fed_TOS_resourcecontroller.webp",
   "frames": 18,
@@ -1413,8 +1525,22 @@
   "frameWidth": 256,
   "frameHeight": 167
  },
+ "fed_TOS_resourcecontroller__terran": {
+  "sheet": "assets/turntables/fed_TOS_resourcecontroller__terran.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 167
+ },
  "fed_TOS_saladin": {
   "sheet": "assets/turntables/fed_TOS_saladin.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 139
+ },
+ "fed_TOS_saladin__terran": {
+  "sheet": "assets/turntables/fed_TOS_saladin__terran.webp",
   "frames": 18,
   "columns": 4,
   "frameWidth": 256,
@@ -1434,8 +1560,29 @@
   "frameWidth": 256,
   "frameHeight": 229
  },
+ "fed_TOS_shipyard_S__terran": {
+  "sheet": "assets/turntables/fed_TOS_shipyard_S__terran.webp",
+  "frames": 18,
+  "columns": 5,
+  "frameWidth": 256,
+  "frameHeight": 229
+ },
+ "fed_TOS_shipyard__terran": {
+  "sheet": "assets/turntables/fed_TOS_shipyard__terran.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 144
+ },
  "fed_TOS_starbase": {
   "sheet": "assets/turntables/fed_TOS_starbase.webp",
+  "frames": 18,
+  "columns": 5,
+  "frameWidth": 212,
+  "frameHeight": 224
+ },
+ "fed_TOS_starbase__terran": {
+  "sheet": "assets/turntables/fed_TOS_starbase__terran.webp",
   "frames": 18,
   "columns": 5,
   "frameWidth": 212,

@@ -78,9 +78,14 @@ def buildable(era: str) -> set[str]:
     return out
 
 
-def starting_fleet(era: str) -> set[str]:
+def starting_fleet(era: str, full: bool = False) -> set[str]:
+    """Hulls in the era's starting fleets. Each race has four options (<race>00<ERA>0 to 3);
+    the last, 3, is the full fleet, with nearly every class, so it's left out of what the
+    Dex calls the starting fleet unless `full` is asked for."""
     out = set()
     for f in (HWRM / ERA_FOLDERS[era] / "scripts" / "startingfleets").glob("*.lua"):
+        if not full and f.stem.endswith("3"):
+            continue
         out |= set(_FLEET_ENTRY.findall(_read(f)))
     return out
 
@@ -176,7 +181,7 @@ def classify(records: list[dict]) -> list[Verdict]:
     verdicts = []
     merge_candidates = []  # (verdict, record) for groups answered with "merge"
     for era, recs in by_era.items():
-        built, fleet, keep = buildable(era), starting_fleet(era), keepers(era)
+        built, fleet, keep = buildable(era), starting_fleet(era, full=True), keepers(era)
         refs = reference_index(era)
         hosts = drone_hosts(era)
         ids = {r["id"] for r in recs}

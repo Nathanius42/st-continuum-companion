@@ -7,7 +7,8 @@ nothing, or only generic text:
       "subtitle": "...",                       optional
       "description": {                          any subset of the build-list fields
           "lead": "...", "crew": 120, "armament": "auto", "defences": "auto",
-          "prerequisites": "auto", "summary": "..."},
+          "prerequisites": "auto", "summary": "...",
+          "aboard": "300 Warriors"},             others carried, shown as Also aboard
       "dimensions": {"length": 2000, "width": 2000},   optional, model units
       "source": "Where the facts come from"}}  optional, for reviewers
 
@@ -145,6 +146,12 @@ def apply_overlay(entry: dict) -> None:
             value = desc[key]
             base[key] = AUTO[key](entry) if value == "auto" and key in AUTO else value
             written.append(key)
+        if desc.get("aboard"):
+            # Troops a boarding ship carries beyond its crew, as the Janissary's
+            # build text gives them ("125 + 375 Marines").
+            base["other"] = [s for s in base["other"] if s["title"] != "Also aboard"]
+            base["other"].append({"title": "Also aboard", "items": [desc["aboard"]]})
+            written.append("aboard")
         entry["description"] = base
     dims = body.get("dimensions")
     if dims:

@@ -41,6 +41,13 @@ def test_unmanned_crew_and_extra_sections():
     assert d["summary"] == "Watches."
 
 
+def test_crew_is_the_first_figure_and_the_rest_is_kept():
+    d = split_description("Boarding Cruiser\n\n<b>Crew Complement</b>\n125 + 375 Marines\n\n<b>Summary</b>\nBoards ships.")
+    assert d["crew"] == 125
+    assert {"title": "Also aboard", "items": ["375 Marines"]} in d["other"]
+    assert split_description("X\n\n<b>Crew Complement</b>\n1,200\n")["crew"] == 1200
+
+
 def test_string_joins_and_empty_research():
     table = read_assigned_table('build = { { Type = Ship, Description = "Part one, " .. "part two" } }')
     assert table.items[0].fields["Description"] == "Part one, part two"

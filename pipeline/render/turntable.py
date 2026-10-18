@@ -193,6 +193,19 @@ def build_material(mat: bpy.types.Material) -> None:
     diff = nt.nodes.new("ShaderNodeTexImage")
     diff.image = bpy.data.images.load(str(texture(stem, "DIFF")))
     nt.links.new(diff.outputs["Color"], bsdf.inputs["Base Color"])
+    if TEAM_COLOUR and texture(stem, "TEAM"):
+        # War paint: the game tints the area in the _TEAM map's alpha with the player's
+        # colour (its colour channels are often plain white, even where nothing is painted).
+        team = nt.nodes.new("ShaderNodeTexImage")
+        team.image = bpy.data.images.load(str(texture(stem, "TEAM")))
+        team.image.colorspace_settings.name = "Non-Color"
+        paint = nt.nodes.new("ShaderNodeMix")
+        paint.data_type = "RGBA"
+        paint.blend_type = "MULTIPLY"
+        paint.inputs["B"].default_value = (*TEAM_COLOUR, 1.0)
+        nt.links.new(team.outputs["Alpha"], paint.inputs["Factor"])
+        nt.links.new(diff.outputs["Color"], paint.inputs["A"])
+        nt.links.new(paint.outputs["Result"], bsdf.inputs["Base Color"])
     if texture(stem, "GLOW"):
         glow = nt.nodes.new("ShaderNodeTexImage")
         glow.image = bpy.data.images.load(str(texture(stem, "GLOW")))
@@ -213,6 +226,10 @@ def build_material(mat: bpy.types.Material) -> None:
 # The normal, specular and reflection maps and the colour texture's alpha, on by default;
 # DEX_FULL_MAPS=0 renders with colour and glow only, for comparison.
 FULL_MAPS = os.environ.get("DEX_FULL_MAPS") != "0"
+
+# DEX_TEAM_COLOUR="r,g,b" (linear, 0-1) paints the _TEAM mask in that colour, as the game
+# does for a player's ships; unset, the hull keeps its plain texture.
+TEAM_COLOUR = tuple(float(c) for c in os.environ["DEX_TEAM_COLOUR"].split(",")) if os.environ.get("DEX_TEAM_COLOUR") else None
 
 
 def add_full_maps(mat, nt, stem: str, diff, bsdf) -> None:
@@ -321,6 +338,10 @@ def main():
         sys.path.insert(0, str(Path(__file__).resolve().parent))
         import dae
         _, missing = dae.load(fbx, POSES)
+        # Structures a subsystem adds at a hardpoint (batch.py ADDONS), built at the
+        # model's origin, where the hardpoint is, so they load in place.
+        for extra in filter(None, os.environ.get("DEX_EXTRA_MODELS", "").split("|")):
+            dae.load(Path(extra), POSES)
     else:
         bpy.ops.import_scene.fbx(filepath=str(fbx))
         missing = pose_fbx(POSES)

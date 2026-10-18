@@ -52,6 +52,30 @@ The APKs' signing certificate (SHA-256), to check a download against: `ce3ae0205
 
 Not available. An iOS build compiles in the pipeline, but it isn't signed or distributed.
 
+## 1.0.1 (19 October 2026)
+
+Corrections and additions from the Continuum team's first look at 1.0.0, with thanks to Dark Sentinel. Built from the same mod revision, 4024. It installs over 1.0.0 and keeps your settings.
+
+### New
+
+- **The Terran Empire's fleet.** In the game the Empire fields the Federation's TOS ships, and now the Dex does too: 18 I.S.S. ships with the mod's Mirror Universe names, shown in the Empire's yellow war paint, led by the I.S.S. Enterprise.
+- **Borg Outpost stages.** The outpost's three upgrades are a toggle on its page, each shown built, with what it unlocks and the running cost.
+- **Tags open Search.** Tap Buildable, Starting fleet, Keeper or Special on a ship page to see every ship that shares it.
+- **Boarding parties.** The Janissary reads 125 crew with 375 marines aboard (it showed 125,375), and the SuQ'jagH, the Dominion Assault Ship and the Pontilus carry boarding parties too (best guesses: the mod gives no figure).
+- **The D'kyr** with its warp ring up and its shuttle docked.
+
+### Corrected
+
+- **Where designs come from.** Not the mod's own after all: the Keldeki and the Horda fighter (other makers' designs), the T'Rehu (Mark Farinas's *Star Trek – The Webcomic*), the Tellus (a Gregory Jein design), the Sword of Kahless and the Vod'leh (*Starfleet Command*), the D'talla (*Star Trek: New Worlds*), and the Ares and the Sh'Raan (*Star Trek: Axanar*). The Romulan TMP flagship is a Firehawk.
+- **Credits.** The Horda fighter's updated model is Dark Sentinel's, with UVs and textures by Major Stress; the Cardassian support ship is *Armada II*'s, improved by Nathanius; the Klingon ENT flagship is credited as the D4 is and the Romulan TMP flagship as the Firehawk; Stargazer made the TMP Spacedock, and HerbyGuitar the TMP and TNG Federation outposts. The Cardassian Construction Bee and Dilithium Miner aren't Dark Sentinel's work, and their maker isn't recorded yet.
+- **Tags.** Keeper marks only ships you can't build, and Starting fleet leaves out the full-fleet start.
+- **Construction Bees.** The TNG Bees' scripting-only copies are gone.
+- **The I.S.S. October Revolution**, the Empire's unused flagship, shows only on 7 November, the anniversary of the revolution it's named after.
+
+### Downloads
+
+The same five as 1.0.0, named for 1.0.1. The APKs are signed with the same key, so they update 1.0.0 in place.
+
 ## 1.0.0 (18 October 2026)
 
 The first release, built from *Star Trek: Continuum Remastered* revision 4024.

@@ -100,9 +100,14 @@ def split_description(raw: str | None) -> dict | None:
         key = CORE_HEADINGS.get(heading.lower())
         if key == "crew":
             text = lines[0] if lines else ""
-            digits = re.sub(r"[^\d]", "", text)
-            if digits:
-                out["crew"] = int(digits)
+            # The crew is the first figure; anything after it ("125 + 375 Marines")
+            # is others carried aboard, kept as a section of its own.
+            first = re.match(r"\s*([\d,]+)\s*(.*)", text)
+            if first:
+                out["crew"] = int(first[1].replace(",", ""))
+                extra = first[2].lstrip("+ ").strip()
+                if extra:
+                    out["other"].append({"title": "Also aboard", "items": [extra]})
             elif re.search(r"unmanned|n/?a|none|automated", text, re.I):
                 out["crew"] = 0  # drones, probes and missiles
             else:

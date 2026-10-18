@@ -3,6 +3,7 @@ import 'dart:math' as math;
 import 'package:flutter/material.dart';
 
 import '../data/models.dart';
+import '../data/search.dart';
 import '../data/ship_view.dart';
 import '../theme/dex_theme.dart';
 import '../ui/format.dart';
@@ -12,6 +13,7 @@ import '../ui/ship_icon.dart';
 import '../ui/turntable_view.dart';
 import 'compare_screen.dart';
 import 'front_page.dart';
+import 'search_screen.dart';
 
 /// A ship's page on its own screen, as on a phone.
 class ShipDetailScreen extends StatelessWidget {
@@ -113,7 +115,22 @@ class _ShipDetailState extends State<ShipDetail> {
           spacing: 6,
           runSpacing: 6,
           children: [
-            for (final a in ship.availability) _Tag(availabilityLabel(a)),
+            for (final a in ship.availability)
+              _Tag(
+                availabilityLabel(a),
+                // A tag opens Search showing every ship with it.
+                onTap: switch (FrontPageScope.maybeOf(context)) {
+                  final data? => () => Navigator.of(context).push(
+                    MaterialPageRoute<void>(
+                      builder: (_) => SearchScreen(
+                        data: data,
+                        initialQuery: ShipQuery(availability: {a}),
+                      ),
+                    ),
+                  ),
+                  null => null,
+                },
+              ),
           ],
         ),
         if (widget.showCompare)
@@ -488,14 +505,17 @@ class _RingsPainter extends CustomPainter {
 }
 
 class _Tag extends StatelessWidget {
-  const _Tag(this.text);
+  const _Tag(this.text, {this.onTap});
 
   final String text;
+
+  /// Opens the ships that share the tag; null keeps it a plain label.
+  final VoidCallback? onTap;
 
   @override
   Widget build(BuildContext context) {
     final dex = DexTheme.of(context);
-    return Container(
+    final tag = Container(
       padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
       decoration: ShapeDecoration(
         color: dex.accent,
@@ -505,6 +525,21 @@ class _Tag extends StatelessWidget {
         text,
         style: Theme.of(context).textTheme.labelMedium
             ?.copyWith(color: dex.textOnAccent),
+      ),
+    );
+    if (onTap == null) return tag;
+    return Semantics(
+      button: true,
+      label: '$text, shows every $text ship',
+      onTap: onTap,
+      excludeSemantics: true,
+      child: Tooltip(
+        message: 'Show every $text ship',
+        child: InkWell(
+          onTap: onTap,
+          customBorder: endShape(dex.shape, 24, left: true, right: true),
+          child: tag,
+        ),
       ),
     );
   }

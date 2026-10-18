@@ -73,7 +73,9 @@ The sidebar's blocks shrink (to 0.7 of their height at most) so every section fi
 - A refit or subsystem keeps the ship's name as the title and shows what it adds underneath ("Sensor Suite: Refit into the Soyuz sub-class").
 - A variant that's a hull of its own (a separated saucer, an escort, a Construction Bee type) takes its own name. The data has only its stats, so the page says that the weapons, abilities and description are the parent ship's.
 
-**Date-gated entries (#635).** An entry with `showOnlyOn` is listed only on that day. The USS Brisbane appears only on 28 July.
+**Date-gated entries (#635).** An entry with `showOnlyOn` is listed only on that day. The USS Brisbane appears only on 28 July, and the I.S.S. October Revolution, the Terran Empire's unused flagship, only on 7 November.
+
+**Tags (#972).** A ship page's tags (Buildable, Starting fleet, Keeper, Special) open Search with that In game filter set, so Keeper lists every Keeper. Keeper marks only ships you can't build, and Starting fleet leaves out the full-fleet start, which has nearly every class.
 
 ## Data
 

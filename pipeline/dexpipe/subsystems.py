@@ -18,7 +18,7 @@ import re
 from collections import defaultdict
 from functools import lru_cache
 
-from .buildlists import _clean, subsystem_entries
+from .buildlists import _clean, split_description, subsystem_entries
 from .research import research_index
 from .lua_ship import parse_ship_file, strip_comments
 from .ships import ERA_FOLDERS, HWRM
@@ -106,11 +106,40 @@ def ship_subsystems(era: str) -> dict[str, list[dict]]:
                               "label": info.get("displayedName") or research, "madstate": state,
                               "description": (info.get("description") or "").split("\n")[0].strip() or None,
                               "buildCost": None, "buildTime": None, "multipliers": {}})
+    for ship, subs in STAGES.get(era, {}).items():
+        out[ship] += _stages(era, subs, entries)
     for ship in ATTACK_MODE.get(era, ()):
         out[ship].append({"kind": "mode", "subsystemId": None, "key": "CodeRed", "label": "Attack Mode",
                           "baseLabel": _BASE_MODE.get(ship, "Flight Mode"), "madstate": "CodeRed",
                           "description": None, "buildCost": None, "buildTime": None, "multipliers": {}})
     return dict(out)
+
+
+# Ships upgraded in stages by subsystems that add structures at a hardpoint rather than
+# switch a model state: the Borg Outpost's three "Improve Assimilation Node" upgrades,
+# each requiring the one before. Each stage is a toggle showing the ship with that
+# stage's structures and every earlier stage's ("addons", rendered by batch.py).
+STAGES = {"TNG": {"brg_TNG_outpost": ["brg_TNG_outpost_1", "brg_TNG_outpost_2", "brg_TNG_outpost_3"]}}
+
+
+def _stages(era: str, subs: list[str], entries: dict) -> list[dict]:
+    out, cost, time, multipliers = [], 0, 0, {}
+    for i, name in enumerate(subs, 1):
+        stats = subsystem_stats(era, name)
+        cost += stats["buildCost"] or 0
+        time += stats["buildTime"] or 0
+        for k, f in stats["multipliers"].items():
+            multipliers[k] = multipliers.get(k, 1) * f
+        raw = (entries.get(name) or {}).get("description") or ""
+        lead = _clean(raw).split("\n")[0].strip()
+        sections = (split_description(raw) or {}).get("other", [])
+        units = next((s["items"] for s in sections if s["title"].lower() == "new units"), [])
+        if units:
+            lead = f"{lead}. New units: {', '.join(units)}." if lead else f"New units: {', '.join(units)}."
+        out.append({"kind": "refit", "subsystemId": name, "key": f"stage-{i}", "label": f"Stage {i}",
+                    "madstate": None, "addons": subs[:i], "description": lead or None,
+                    "buildCost": cost or None, "buildTime": time or None, "multipliers": dict(multipliers)})
+    return out
 
 
 # Ships whose battle stations (the CodeRed model state) visibly change them, shown as a

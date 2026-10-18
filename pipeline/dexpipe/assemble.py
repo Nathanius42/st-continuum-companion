@@ -19,6 +19,7 @@ from .inclusion import classify, keepers, starting_fleet
 from .notable import notable_ships
 from .research import resolve
 from .subsystems import ship_subsystems
+from .terran import terran_fleet
 from .turntables import turntable_for
 
 STAT_KEYS = ("maxHealth", "maxSpeed", "buildCost", "buildTime", "length", "width")
@@ -73,7 +74,9 @@ def assemble(records: list[dict]) -> tuple[list[dict], list]:
             availability.append("buildable")
         if v.hull in starting_fleet(v.era):
             availability.append("starting-fleet")
-        if v.hull in keepers(v.era):
+        if v.hull in keepers(v.era) and not build:
+            # Keeper only marks a ship you can't build yourself; a buildable ship that
+            # also turns up as a Keeper is simply buildable.
             availability.append("keeper")
         if not availability:
             availability.append("special")  # included on Nathan's answer: missions, Invasion, map stations
@@ -114,6 +117,7 @@ def assemble(records: list[dict]) -> tuple[list[dict], list]:
             entry["showOnlyOn"] = v.show_only_on
         apply_overlay(entry)
         entries.append(entry)
+    entries += terran_fleet(entries)
     return entries, verdicts
 
 

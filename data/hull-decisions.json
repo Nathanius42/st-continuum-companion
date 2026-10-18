@@ -3,6 +3,12 @@
   "answered": "2026-10-17",
   "groups": [
     {
+      "group": "Construction Bee scripting copies",
+      "pattern": "_constructor(1b|[2-9]b?)$",
+      "include": false,
+      "note": "The numbered Construction Bees (Type 1b to 4b) exist only for the mod's scripts and work the same as the first, so they're left out rather than shown as variants."
+    },
+    {
       "group": "Construction Bees",
       "pattern": "_constructor\\d*b?$",
       "include": true,
@@ -38,6 +44,14 @@
     }
   ],
   "decisions": {
+    "TOS/fed_TES_flagship": {
+      "include": true,
+      "showOnlyOn": {
+        "month": 11,
+        "day": 7
+      },
+      "note": "The I.S.S. October Revolution is the mod's unused Terran flagship (its swap is switched off), so it's shown only on 7 November, the anniversary of the October Revolution it's named after (25 October 1917 in the Julian calendar Russia then used)."
+    },
     "TNG/fed_TNG_brisbane": {
       "include": true,
       "showOnlyOn": {
