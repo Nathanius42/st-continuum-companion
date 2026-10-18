@@ -1,0 +1,156 @@
+{
+  "$comment": "Front-page content (#941), bundled so the app needs no network. Steam figures are a snapshot taken on the date given; links open in the browser.",
+  "mission": {
+    "quote": "Mods, the final frontier. These are the imaginings of Continuum Corp. Its continuing mission, to explore strange new scripts, to find new models and new customisations. To boldly mod what no mod has modded before!",
+    "attribution": "Star Trek: Continuum Crew",
+    "about": [
+      "Star Trek: Continuum is a total conversion for Homeworld Remastered. The mod is published per era, so each can develop its own distinct flavour of the Star Trek universe.",
+      "Ever since The Original Series made its debut on 8 September 1966 we have been enchanted by Gene Roddenberry's vision of a future where humanity not only makes it out the other side of the adolescence of our species, it thrives. Seeking out strange new worlds, new civilisations and boldly going where no one has gone before! We hope to capture some of the majesty of this feeling with this mod, and hope that you enjoy it in the Homeworld Remastered engine."
+    ],
+    "disclaimer": "Star Trek and all related marks, logos and characters are solely owned by CBS Studios Inc. This fan production is not endorsed by, sponsored by, nor affiliated with CBS, Paramount Pictures, or any other Star Trek franchise, and is a non-commercial fan-made game modification intended for recreational use."
+  },
+  "team": ["Nathanius", "Major Stress", "Dark_Sentinel", "Olmysen", "Brandonator", "Stargazer", "HerbyGuitar"],
+  "steam": {
+    "asOf": "2026-10-18",
+    "items": [
+      {"title": "Star Trek: Continuum - 2380", "era": "TNG", "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=759628723", "subscribers": 35046, "visitors": 88416, "favourites": 2110, "ratings": 836, "stars": 5,
+       "awards": [["Winner", 1], ["Fire", 1], ["Take My Points", 8], ["Gotta Have It", 5], ["Golden Unicorn", 2], ["Mind Blown", 2], ["Treasure", 1], ["Warm Blanket", 1], ["Heartwarming", 1], ["Michelangelo", 1], ["Mad Scientist", 1], ["Whoa", 1]]},
+      {"title": "Star Trek: Continuum - 2310", "era": "TMP", "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=1955009924", "subscribers": 9694, "visitors": 32654, "favourites": 690, "ratings": 215, "stars": 5,
+       "awards": [["Winner", 1], ["Take My Points", 3], ["Golden Unicorn", 3], ["Treasure", 3], ["Gotta Have It", 3], ["Michelangelo", 3], ["Slow Clap", 2], ["Clever", 1], ["Mind Blown", 1], ["Saucy", 1], ["Fancy Pants", 1], ["Warm Blanket", 1], ["Jester", 1], ["Super Star", 1], ["Deep Thoughts", 1], ["Heartwarming", 1], ["Hilarious", 1], ["Hot Take", 1], ["Poetry", 1], ["Extra Helpful", 1], ["Mad Scientist", 1], ["Wholesome", 1], ["Whoa", 1], ["Wild", 1]]},
+      {"title": "Star Trek: Continuum - 2250", "era": "TOS", "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=1954995612", "subscribers": 7138, "visitors": 25309, "favourites": 556, "ratings": 181, "stars": 5,
+       "awards": [["Winner", 1], ["Take My Points", 1], ["Golden Unicorn", 1], ["Mind Blown", 1], ["Hot Take", 1], ["Gotta Have It", 1], ["Mad Scientist", 1]]},
+      {"title": "Star Trek: Continuum - 2160", "era": "ENT", "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=1954953230", "subscribers": 7663, "visitors": 26394, "favourites": 607, "ratings": 179, "stars": 4,
+       "awards": [["Winner", 1], ["Gotta Have It", 3], ["Take My Points", 2], ["Extra Helpful", 2], ["Michelangelo", 2], ["Golden Unicorn", 1], ["Treasure", 1]]},
+      {"title": "Star Trek: Continuum (original release)", "era": null, "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=403358147", "subscribers": 25364, "visitors": 96685, "favourites": 1526, "ratings": 588, "stars": 5,
+       "awards": [["Fire", 2], ["Take My Points", 1], ["Gotta Have It", 1], ["Whoa", 1]]}
+    ]
+  },
+  "comms": {
+    "discord": "https://discord.gg/be7wED7",
+    "steamGroup": "https://steamcommunity.com/groups/STCRM",
+    "help": [
+      {"title": "How to submit logs to us", "url": "https://steamcommunity.com/workshop/filedetails/discussion/759628723/350541595104321410/"},
+      {"title": "How to fix access violation errors", "url": "https://steamcommunity.com/workshop/filedetails/discussion/759628723/350541595108752536/"}
+    ],
+    "reporting": [
+      "Tell Homeworld Remastered to write a log: in Steam, right-click the game in your library, open Properties > General, and add -luatrace to the launch options.",
+      "Write down the steps that make the bug happen: your game set-up options, race and era, and, if it isn't a crash on load, what you did. A numbered list helps. We can't fix it if we can't recreate it.",
+      "Find your log: HwRM.log, in the same folder as HomeworldRM.exe (…\\steamapps\\common\\Homeworld\\HomeworldRM\\Bin\\Release).",
+      "Bring the steps, the log and any screenshots to the Discord."
+    ]
+  },
+  "access": [
+    {"title": "2380 (TNG) on the Steam Workshop", "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=759628723"},
+    {"title": "2310 (TMP) on the Steam Workshop", "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=1955009924"},
+    {"title": "2250 (TOS) on the Steam Workshop", "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=1954995612"},
+    {"title": "2160 (ENT) on the Steam Workshop", "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=1954953230"},
+    {"title": "Continuum Remastered on ModDB", "url": "https://www.moddb.com/mods/star-trek-continuum-remastered"},
+    {"title": "Remastered installer on ModDB", "url": "https://www.moddb.com/mods/star-trek-continuum-remastered/downloads/stcr-installer"},
+    {"title": "Classic Continuum (Homeworld 2) on ModDB", "url": "https://www.moddb.com/mods/star-trek-continuum"}
+  ],
+  "media": [
+    {"title": "Star Trek: Continuum - Standalone station construction", "url": "https://www.youtube.com/watch?v=jAkt7riakkA"},
+    {"title": "Star Trek: Continuum 2019 big update", "url": "https://www.youtube.com/watch?v=8KXe2kajj2A"},
+    {"title": "Gorn release trailer", "url": "https://www.youtube.com/watch?v=GAzcTO0LRCg"},
+    {"title": "Borg teaser trailer", "url": "https://www.youtube.com/watch?v=3dVjvg5rq60"},
+    {"title": "Kelper class station teaser", "url": "https://www.youtube.com/watch?v=n4HMo8c-kas"},
+    {"title": "Dominion release trailer", "url": "https://www.moddb.com/mods/star-trek-continuum-remastered/videos/stc-dominion-release-trailer"},
+    {"title": "Release Gamma trailer", "url": "https://www.youtube.com/watch?v=oV5CnercJaU"}
+  ],
+  "factions": {
+    "$comment": "A short blurb per faction for the Factions screen, our own words. Keyed by era where the faction changes over time, '*' for every era.",
+    "federation": {
+      "ENT": "United Earth reaches for the stars. Starfleet's NX-class ships open the way, and after the Earth-Romulan War, Earth, Vulcan, Andoria and Tellar join to found the United Federation of Planets in 2161.",
+      "TOS": "A young Federation pushes its frontier outward. Its starships explore the unknown on five-year missions, while uneasy borders hold the Klingons and Romulans at bay.",
+      "TMP": "Refitted and resurgent, the Federation rebuilds its fleet, faces down the Klingons and, after Praxis, takes the first steps towards peace at Khitomer.",
+      "TNG": "At its height, the Federation spans more than 150 worlds. Its starships carry exploration and diplomacy to the stars, tested by the Borg and by the Dominion War."
+    },
+    "klingon": {
+      "ENT": "Proud, honour-bound and quick to fight, the Klingon Empire meets Earth in 2151, and a century of mistrust begins.",
+      "TOS": "Expansionist and hostile, the Empire contests every border with the Federation, its battlecruisers a byword for menace, until the Organians impose an uneasy peace.",
+      "TMP": "The Empire's power peaks, until the moon Praxis explodes in 2293, crippling the homeworld and driving the Klingons to the peace table at Khitomer.",
+      "TNG": "Now the Federation's ally, the Empire weathers a civil war and fights beside Starfleet against the Dominion, its warriors' honour carried by mighty warships."
+    },
+    "romulan": {
+      "ENT": "Unseen behind their ships' cloaks, the Romulans make war on Earth and its allies. Peace in 2160 sets a Neutral Zone between them, and no human has yet seen a Romulan face.",
+      "TOS": "Weakened by the war, the Romulan Star Empire keeps to itself for a century, until a cloaked Bird-of-Prey crosses the Neutral Zone in 2266 and reveals its people as kin of the Vulcans.",
+      "TMP": "Secretive and patient, the Romulans rebuild their strength behind the Neutral Zone, trading technology with the Klingons and watching the Federation's every move.",
+      "TNG": "Back from decades of isolation, the Romulan Star Empire fields its great warbirds and plays every side, until the Dominion War forces it into alliance."
+    },
+    "gorn": {
+      "*": "Reptilian, immensely strong and slow to trust, the Gorn Hegemony first clashed with the Federation at Cestus III. Its rugged ships trade agility for armour and firepower."
+    },
+    "tholian": {
+      "*": "The Tholians live in searing heat and guard their space jealously, their ships spinning energy webs to trap intruders. Their precision is legendary, their patience short."
+    },
+    "terran": {
+      "*": "In the mirror universe, the Terran Empire rules by fear. Its officers rise by assassination, and its starships keep a cruel order across conquered worlds."
+    },
+    "cardassian": {
+      "*": "Militaristic and secretive, the Cardassian Union occupied Bajor for half a century. It makes peace with the Federation, then joins the Dominion, and pays dearly for it."
+    },
+    "dominion": {
+      "*": "Through the Bajoran wormhole comes the Dominion: the shapeshifting Founders, ruling through the Vorta and the Jem'Hadar, bringing order to the Gamma Quadrant by conquest."
+    },
+    "borg": {
+      "*": "The Borg Collective assimilates whole species into a single mind, adding their distinctiveness to its own. Its ships adapt to any defence; resistance, it says, is futile."
+    },
+    "voth": {
+      "*": "Descended from Earth's dinosaurs, the Voth left their homeworld millions of years ago to become a Delta Quadrant power, and guard the doctrine that they were born there."
+    },
+    "ferengi": {
+      "*": "To the Ferengi Alliance, profit is everything. Its Marauders trade, bargain and, when the price is right, fight, always by the Rules of Acquisition."
+    },
+    "breen": {
+      "*": "No outsider has seen a Breen's face. From their frozen worlds they join the Dominion in 2375 and strike Earth itself with a weapon that drains a ship's power."
+    },
+    "undine": {
+      "*": "Species 8472 call themselves the Undine. Out of fluidic space, their living bioships can tear a Borg cube apart; even the Collective fears them."
+    },
+    "unaligned": {
+      "*": "Freighters, stations and independents: the ships that answer to no great power."
+    }
+  },
+  "credits": [
+    {"heading": "Scripts", "lines": [
+      "The STC scripting framework in the STC_lib folder is Stargazer's work, with fixes, edits and upgrades from friends of the mod over time.",
+      "Phaser arcs on Federation ships: Stargazer.",
+      "Invasion mode: Siber/EatThePath, from the Homeworld @ mod for Homeworld 2.",
+      "The \"666 bug\" fix: Trebic, posted to the Gearbox forum."
+    ]},
+    {"heading": "Effects and shaders", "lines": [
+      "Most weapon effects: Stargazer.",
+      "Explosions and debris: part of Stargazer's STC scripting framework.",
+      "Animated ship shader: CDMBob.",
+      "Planet ring shader: alekfix789, with help from pascal76680, radar3301 and PayDay.",
+      "Borg assimilation shader: Dark_Sentinel; script: Nathanius."
+    ]},
+    {"heading": "Music", "lines": [
+      "Compiled by MrPras by race and era from the original soundtracks of all four original Star Trek series.",
+      "The mod's original audio, still in the game files, is from the CD \"Symphonic Star Trek\" by the Cincinnati Pops Orchestra: the main menu theme is the suite from Star Trek II: The Wrath of Khan (main title), fed_amb01 is the Star Trek: The Next Generation theme, and kng_amb01 is the Klingon theme from Star Trek: The Motion Picture.",
+      "The rest is recycled from Star Trek: Starfleet Command (Taldren), Star Trek: Armada and Armada II, and Star Trek: Klingon Academy (Activision)."
+    ]},
+    {"heading": "Maps", "lines": [
+      "Every map is generated with a derivative of Stargazer's random map script in PayDay's map editor.",
+      "Backgrounds by Nathanius unless noted.",
+      "Andor: gas giant texture by Psiyon; Andoria texture by Outlance Productions.",
+      "Badlands: Dark_Sentinel, with his background shader.",
+      "Bajor, Bolia, Romii: planet textures from the Celestial Motherlode website.",
+      "Black Hole: black hole by Stargazer.",
+      "Double: Alpha Centauri texture by Psiyon.",
+      "Eagle Nebula: background texture by TON_Viper / Cnl Pepper.",
+      "Earth: Earth and Luna textures by TON_Viper / Cnl Pepper.",
+      "Jupiter: Jupiter texture by TON_Viper / Cnl Pepper.",
+      "Mars (ENT): Mars from the Celestial Motherlode website; Deimos and Phobos by Stargazer.",
+      "Qo'noS (pre-TMP): Qo'noS from the Celestial Motherlode website; Praxis and its fragments by Stargazer.",
+      "Also by Nathanius: Deep Space, Mars (TMP, TOS, TNG), Qo'noS (post-TMP), Sol."
+    ]},
+    {"heading": "Ships", "lines": [
+      "Each ship's model and texture credits are on its page in the Ship Library."
+    ]},
+    {"heading": "This app", "lines": [
+      "Continuum Companion: Nathanius, with Claude (Anthropic).",
+      "Splash and sounds from the STC website by Brandonator."
+    ]}
+  ]
+}

@@ -1,0 +1,66 @@
+# Flutter / Dart
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+build/
+coverage/
+*.g.dart.bak
+
+# Android
+**/android/.gradle/
+**/android/captures/
+**/android/local.properties
+**/android/key.properties
+**/android/app/debug/
+**/android/app/profile/
+**/android/app/release/
+*.apk
+*.aab
+
+# iOS
+**/ios/Pods/
+**/ios/.symlinks/
+**/ios/Flutter/Flutter.framework
+**/ios/Flutter/Flutter.podspec
+**/ios/Flutter/Generated.xcconfig
+**/ios/Flutter/ephemeral/
+**/ios/Runner/GeneratedPluginRegistrant.*
+**/ios/**/xcuserdata/
+*.ipa
+
+# Windows
+**/windows/flutter/ephemeral/
+
+# Signing - never commit keys or certificates
+*.jks
+*.keystore
+*.p12
+*.mobileprovision
+*.cer
+*.pfx
+
+# Python pipeline
+__pycache__/
+.venv/
+pipeline/out/
+
+# IDE / OS
+.idea/
+*.iml
+.vscode/
+*.log
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Hot-reload control files (tools/run_on_phone.ps1)
+tools/reload/
+
+# Reference images for theme research (#589): owned by their creators, kept local
+data/reference/
+
+# Packaged downloads (tools/package_windows.ps1)
+dist/

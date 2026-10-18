@@ -1,0 +1,55 @@
+{
+  "$comment": "Which of the mod's badges (STC - <year>/badges/<name>.tga) is each faction's logo in each era (#442). Edit the names to choose a different badge; pipeline/build_data.py exports them to app/assets/logos/<era>/<faction>.webp. A faction without an entry for an era shows a placeholder. For a faction the mod has no badge for, save an image in data/reference/badges/ and name it here as \"reference/badges/<file>\". \"white circle\" draws a plain white disc (Unaligned).",
+  "federation": {
+    "ENT": "United Earth",
+    "TOS": "UFP - 2240",
+    "TMP": "UFP - silver",
+    "TNG": "UFP - 2290 - silver"
+  },
+  "terran": {
+    "TOS": "Terran Empire"
+  },
+  "klingon": {
+    "ENT": "Klingon Empire - 4",
+    "TOS": "Klingon Empire - 2",
+    "TMP": "Klingon Empire - 3",
+    "TNG": "Klingon Empire - 4"
+  },
+  "romulan": {
+    "ENT": "Romulan Empire - 1",
+    "TOS": "Romulan Empire - 2260",
+    "TMP": "Romulan Empire - 1",
+    "TNG": "Romulan Empire - 3"
+  },
+  "gorn": {
+    "TMP": "Gorn Hegemony"
+  },
+  "cardassian": {
+    "TNG": "Cardassian Union"
+  },
+  "dominion": {
+    "TNG": "Dominion"
+  },
+  "borg": {
+    "TNG": "Borg Collective"
+  },
+  "voth": {
+    "TNG": "Voth Supremacy"
+  },
+  "ferengi": {
+    "TNG": "Ferengi Alliance"
+  },
+  "tholian": {
+    "ENT": "reference/badges/tholian.png"
+  },
+  "breen": {
+    "TNG": "reference/badges/breen.png"
+  },
+  "undine": {
+    "TNG": "reference/badges/undine.jpg"
+  },
+  "unaligned": {
+    "TOS": "white circle",
+    "TNG": "white circle"
+  }
+}

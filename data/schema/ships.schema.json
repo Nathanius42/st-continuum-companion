@@ -1,0 +1,1025 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dev.azure.com/molla-workshop/HWRM-Continuum-Dex/data/schema/ships.schema.json",
+  "title": "Continuum Dex ship data",
+  "description": "The single data file the pipeline writes and the app bundles. Values come from the STCR mod's SVN working copy; see the Data Sources and Ship Data Schema pages on the Dex wiki.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "dataVersion",
+    "eras",
+    "factions",
+    "ships"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "description": "Version of this schema. Bump it when a change would break the app's parser.",
+      "const": 1
+    },
+    "dataVersion": {
+      "$ref": "#/$defs/dataVersion"
+    },
+    "eras": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/era"
+      }
+    },
+    "factions": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/faction"
+      }
+    },
+    "ships": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/ship"
+      }
+    }
+  },
+  "$defs": {
+    "eraId": {
+      "enum": [
+        "ENT",
+        "TOS",
+        "TMP",
+        "TNG"
+      ]
+    },
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9-]*$"
+    },
+    "hullId": {
+      "description": "The mod's hull name: race prefix, era or variant code, then the class, e.g. fed_TNG_galaxy.",
+      "type": "string",
+      "pattern": "^[a-z]{3}_[A-Z]{3}_[A-Za-z0-9_]+$"
+    },
+    "relativePath": {
+      "description": "Forward-slash path relative to its stated root.",
+      "type": "string",
+      "pattern": "^[^\\\\:]+$"
+    },
+    "dataVersion": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "modRevision",
+        "generatedAt"
+      ],
+      "properties": {
+        "modRevision": {
+          "description": "SVN revision of the mod working copy the data was read from.",
+          "type": "integer",
+          "minimum": 1
+        },
+        "generatedAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "generator": {
+          "description": "Tool and version that wrote the file.",
+          "type": "string"
+        }
+      }
+    },
+    "era": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "title",
+        "year",
+        "modFolder"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/eraId"
+        },
+        "title": {
+          "type": "string"
+        },
+        "year": {
+          "type": "integer"
+        },
+        "modFolder": {
+          "description": "e.g. \"STC - 2380\"",
+          "type": "string"
+        }
+      }
+    },
+    "faction": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "name",
+        "prefixes",
+        "playable",
+        "eras"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/slug"
+        },
+        "name": {
+          "type": "string"
+        },
+        "prefixes": {
+          "description": "Hull-name prefixes belonging to this faction, e.g. [\"fed\"].",
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z]{3}$"
+          }
+        },
+        "playable": {
+          "description": "False for neutral and Keeper-only factions.",
+          "type": "boolean"
+        },
+        "eras": {
+          "description": "Eras in which this faction has ships in the Dex.",
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/eraId"
+          }
+        },
+        "theme": {
+          "description": "Theme id from the Design Language framework; omitted to use the era's theme.",
+          "$ref": "#/$defs/slug"
+        },
+        "logos": {
+          "description": "Era id → the faction's logo in that era, relative to the app folder (from the mod's badges; data/logos.source.json).",
+          "type": "object",
+          "propertyNames": {
+            "$ref": "#/$defs/eraId"
+          },
+          "additionalProperties": {
+            "$ref": "#/$defs/relativePath"
+          }
+        }
+      }
+    },
+    "ship": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "era",
+        "faction",
+        "name",
+        "availability",
+        "classification",
+        "stats",
+        "roles",
+        "weapons",
+        "abilities",
+        "media",
+        "variants",
+        "source"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/hullId"
+        },
+        "era": {
+          "$ref": "#/$defs/eraId"
+        },
+        "faction": {
+          "description": "A factions[].id.",
+          "$ref": "#/$defs/slug"
+        },
+        "name": {
+          "description": "displayedName from the .ship file.",
+          "type": "string",
+          "minLength": 1
+        },
+        "subtitle": {
+          "description": "sobDescription from the .ship file (Style C build-menu subtitle).",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "availability": {
+          "description": "How the ship appears in the game. At least one. 'special' = included on Nathan's answer though not buildable, in a starting fleet or a Keeper: mission ships, Invasion-only ships and map stations.",
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "buildable",
+              "starting-fleet",
+              "keeper",
+              "special"
+            ]
+          }
+        },
+        "showOnlyOn": {
+          "description": "Easter eggs: the app shows this entry (and its variants) only on this day of the year. Omitted for normal entries.",
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "month",
+            "day"
+          ],
+          "properties": {
+            "month": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 12
+            },
+            "day": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 31
+            }
+          }
+        },
+        "classification": {
+          "$ref": "#/$defs/classification"
+        },
+        "stats": {
+          "$ref": "#/$defs/stats"
+        },
+        "roles": {
+          "description": "AI tactical roles from the .def file, e.g. AntiFrigate.",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "weapons": {
+          "$ref": "#/$defs/weapons"
+        },
+        "abilities": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/ability"
+          }
+        },
+        "description": {
+          "description": "The build-menu description, split into sections. Null for ships with no build entry, such as Keepers.",
+          "oneOf": [
+            {
+              "type": "null"
+            },
+            {
+              "$ref": "#/$defs/description"
+            }
+          ]
+        },
+        "research": {
+          "description": "Research needed before the ship can be built. Null when none, or not buildable.",
+          "oneOf": [
+            {
+              "type": "null"
+            },
+            {
+              "$ref": "#/$defs/research"
+            }
+          ]
+        },
+        "canon": {
+          "description": "Canon source, from the Canon Verification Results. Null until checked.",
+          "oneOf": [
+            {
+              "type": "null"
+            },
+            {
+              "$ref": "#/$defs/canon"
+            }
+          ]
+        },
+        "credits": {
+          "$ref": "#/$defs/credits"
+        },
+        "notableShips": {
+          "description": "Ships of this class the game names, from era_ship_names.lua, in build order (#934). Absent when the class has none.",
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/notableShip"
+          }
+        },
+        "media": {
+          "$ref": "#/$defs/media"
+        },
+        "variants": {
+          "description": "Alternative configurations shown on the same ship page with a toggle. Empty when there are none.",
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/variant"
+          }
+        },
+        "source": {
+          "$ref": "#/$defs/source"
+        }
+      }
+    },
+    "classification": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "displayFamily"
+      ],
+      "properties": {
+        "displayFamily": {
+          "description": "The engine's class: Fighter, Corvette, Frigate, Capital, Utility, Platform and so on. HWRM uses Capital for everything above a frigate.",
+          "type": "string"
+        },
+        "buildFamily": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "unitCapsFamily": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "sizeCategory": {
+          "description": "hullSizeCategory from the .def file: Tiny, Small, Medium, Capital and so on.",
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "stats": {
+      "description": "Numbers straight from the mod, in game units. Null where the mod has no value.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "maxHealth"
+      ],
+      "properties": {
+        "maxHealth": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "maxSpeed": {
+          "description": "mainEngineMaxSpeed.",
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "buildCost": {
+          "description": "In RU.",
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "buildTime": {
+          "description": "In seconds.",
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "length": {
+          "description": "longestAxis from the .def file.",
+          "type": [
+            "number",
+            "null"
+          ],
+          "exclusiveMinimum": 0
+        },
+        "width": {
+          "description": "midAxis from the .def file.",
+          "type": [
+            "number",
+            "null"
+          ],
+          "exclusiveMinimum": 0
+        }
+      }
+    },
+    "weapons": {
+      "description": "Counted from the active StartShipWeaponConfig lines. The X_ shield-emulation twins are left out.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "total",
+        "beam",
+        "pulse",
+        "torpedo",
+        "mounts",
+        "details",
+        "dps"
+      ],
+      "properties": {
+        "total": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "beam": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "pulse": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "torpedo": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "other": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "mounts": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "weapon",
+              "hardpoint"
+            ],
+            "properties": {
+              "weapon": {
+                "description": "Weapon name, e.g. fed_TNG_photon_Mk06.",
+                "type": "string"
+              },
+              "hardpoint": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "details": {
+          "description": "One row per kind of weapon, read from each mount's .wepn file (#428). Mounts with the same name and figures are merged and counted.",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "name",
+              "kind",
+              "count",
+              "damage",
+              "cycle",
+              "shotsPerCycle",
+              "dps",
+              "range",
+              "special",
+              "disables",
+              "area"
+            ],
+            "properties": {
+              "name": {
+                "description": "Readable name with the mark, e.g. 'Phaser Beams Mk 11'.",
+                "type": "string"
+              },
+              "kind": {
+                "enum": [
+                  "beam",
+                  "pulse",
+                  "torpedo",
+                  "other"
+                ]
+              },
+              "count": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "damage": {
+                "type": [
+                  "number",
+                  "null"
+                ],
+                "minimum": 0,
+                "description": "Average damage of one hit (DamageHealth, including any weapon a hit spawns). Null when the weapon does no damage."
+              },
+              "cycle": {
+                "type": [
+                  "number",
+                  "null"
+                ],
+                "minimum": 0,
+                "description": "Seconds between shots, or between the starts of bursts. Null for mines and sphere bursts."
+              },
+              "shotsPerCycle": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "dps": {
+                "type": [
+                  "number",
+                  "null"
+                ],
+                "minimum": 0,
+                "description": "Damage per second of one mount: damage x shotsPerCycle / cycle."
+              },
+              "range": {
+                "type": [
+                  "number",
+                  "null"
+                ],
+                "minimum": 0
+              },
+              "special": {
+                "type": "boolean",
+                "description": "Fired only as a special attack; left out of the ship's dps."
+              },
+              "disables": {
+                "type": "boolean",
+                "description": "A hit disables the target (an EMP)."
+              },
+              "area": {
+                "type": "boolean",
+                "description": "A hit spreads as a sphere burst."
+              }
+            }
+          }
+        },
+        "dps": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "description": "The ship's total damage per second: the dps of every mount, special attacks left out."
+        }
+      }
+    },
+    "ability": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "name"
+      ],
+      "properties": {
+        "id": {
+          "description": "Engine ability name, e.g. CloakAbility.",
+          "type": "string"
+        },
+        "name": {
+          "description": "Readable name for the app, e.g. Cloak.",
+          "type": "string"
+        },
+        "detail": {
+          "description": "Optional extra, e.g. the custom command's purpose.",
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "description": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "lead",
+        "armament",
+        "defences",
+        "prerequisites",
+        "summary"
+      ],
+      "properties": {
+        "lead": {
+          "description": "First line of the description, e.g. \"Heavy Explorer\".",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "crew": {
+          "description": "Crew complement, when given.",
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "armament": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "defences": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "prerequisites": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "summary": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "other": {
+          "description": "Extra sections some descriptions carry, such as Subsystems or Air Wing.",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "title",
+              "items"
+            ],
+            "properties": {
+              "title": {
+                "type": "string"
+              },
+              "items": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "research": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "expression",
+        "anyOf"
+      ],
+      "properties": {
+        "expression": {
+          "description": "RequiredResearch exactly as in the build list, e.g. \"A | B\".",
+          "type": "string"
+        },
+        "anyOf": {
+          "description": "The alternatives in the expression; any one unlocks the ship.",
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "description": "Displayed name from the research files. Null for a starting tree, which has none.",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "startingTree": {
+                "description": "Set when this alternative is a tree core the game grants at the start of a match: standard, or flagship in flagship modes. A ship whose alternatives are all starting trees is available from the start.",
+                "enum": [
+                  "standard",
+                  "flagship"
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    "canon": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "tier"
+      ],
+      "properties": {
+        "tier": {
+          "description": "A = Memory Alpha (screen canon), B = Memory Beta (licensed), G = Memory Gamma or STO wiki, none = no source.",
+          "enum": [
+            "A",
+            "B",
+            "G",
+            "none"
+          ]
+        },
+        "url": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "uri"
+        },
+        "note": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "credits": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "authors"
+      ],
+      "properties": {
+        "authors": {
+          "description": "Model and texture authors as named in the source readme. Empty when unknown.",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "note": {
+          "description": "Why authors is empty, or other credit details.",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "links": {
+          "description": "Sites of the authors named, keyed by name (from $authorLinks in credits.source.json). A credit line starting with the name links to the site.",
+          "type": "object",
+          "additionalProperties": {
+            "type": "string",
+            "format": "uri"
+          }
+        }
+      }
+    },
+    "notableShip": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "name"
+      ],
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "registry": {
+          "description": "As painted on the hull, e.g. NCC-1701-A. Absent when the game shows none.",
+          "type": "string"
+        }
+      }
+    },
+    "media": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "icon"
+      ],
+      "properties": {
+        "icon": {
+          "description": "Exported icon, relative to the app's assets folder. Null if the hull has no icon.",
+          "oneOf": [
+            {
+              "type": "null"
+            },
+            {
+              "$ref": "#/$defs/relativePath"
+            }
+          ]
+        },
+        "turntable": {
+          "description": "Pre-rendered spin sprite sheet. Null until rendered.",
+          "oneOf": [
+            {
+              "type": "null"
+            },
+            {
+              "$ref": "#/$defs/turntable"
+            }
+          ]
+        }
+      }
+    },
+    "turntable": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "sheet",
+        "frames",
+        "frameWidth",
+        "frameHeight"
+      ],
+      "properties": {
+        "sheet": {
+          "$ref": "#/$defs/relativePath"
+        },
+        "frames": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "columns": {
+          "description": "Frames per row in the sheet; defaults to all in one row.",
+          "type": "integer",
+          "minimum": 1
+        },
+        "frameWidth": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "frameHeight": {
+          "type": "integer",
+          "minimum": 1
+        }
+      }
+    },
+    "variant": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "label",
+        "kind"
+      ],
+      "properties": {
+        "id": {
+          "description": "Unique within the ship.",
+          "$ref": "#/$defs/slug"
+        },
+        "label": {
+          "description": "Text on the toggle, e.g. \"Saucer\".",
+          "type": "string"
+        },
+        "baseLabel": {
+          "description": "For a mode: what the ship's own choice on the toggle is called instead of its name, e.g. \"Flight Mode\" beside \"Attack Mode\".",
+          "type": "string"
+        },
+        "kind": {
+          "description": "subsystem = a module fitted to this hull; separation = a part the ship splits into; escort = craft that launch from or travel with the ship, such as carrier drones; refit and loadout = alternative versions; upgrade = research that changes how the ship looks (the Negh'Var's Heavy Pulse Cannons); mode = a stance the ship takes, such as a Bird-of-Prey's attack mode.",
+          "enum": [
+            "subsystem",
+            "separation",
+            "escort",
+            "refit",
+            "loadout",
+            "upgrade",
+            "mode"
+          ]
+        },
+        "hullId": {
+          "description": "For variants that are hulls of their own (separation parts, refits).",
+          "oneOf": [
+            {
+              "type": "null"
+            },
+            {
+              "$ref": "#/$defs/hullId"
+            }
+          ]
+        },
+        "subsystemId": {
+          "description": "For subsystem variants: the subsystem name.",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "description": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "stats": {
+          "description": "Only the values that differ from the parent ship.",
+          "oneOf": [
+            {
+              "type": "null"
+            },
+            {
+              "$ref": "#/$defs/statsOverride"
+            }
+          ]
+        },
+        "media": {
+          "description": "Only the media that differ from the parent ship.",
+          "oneOf": [
+            {
+              "type": "null"
+            },
+            {
+              "$ref": "#/$defs/media"
+            }
+          ]
+        },
+        "count": {
+          "description": "For escorts: how many of this craft travel with the ship. Drones sharing a model are one variant with a count.",
+          "type": "integer",
+          "minimum": 1
+        },
+        "hullIds": {
+          "description": "Every hull this variant stands for, when several identical hulls are collapsed into one (e.g. drones 1-3).",
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/hullId"
+          }
+        }
+      }
+    },
+    "statsOverride": {
+      "type": "object",
+      "additionalProperties": false,
+      "minProperties": 1,
+      "properties": {
+        "maxHealth": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "maxSpeed": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "buildCost": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "buildTime": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "length": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "exclusiveMinimum": 0
+        },
+        "width": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "exclusiveMinimum": 0
+        }
+      }
+    },
+    "source": {
+      "description": "Where the data came from, relative to the mod's HWRM folder, for tracing problems back.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "ship"
+      ],
+      "properties": {
+        "ship": {
+          "$ref": "#/$defs/relativePath"
+        },
+        "def": {
+          "oneOf": [
+            {
+              "type": "null"
+            },
+            {
+              "$ref": "#/$defs/relativePath"
+            }
+          ]
+        },
+        "build": {
+          "oneOf": [
+            {
+              "type": "null"
+            },
+            {
+              "$ref": "#/$defs/relativePath"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,2739 @@
+{
+ "brg_TNG_assimilator": {
+  "sheet": "assets/turntables/brg_TNG_assimilator.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 134
+ },
+ "brg_TNG_constructionship": {
+  "sheet": "assets/turntables/brg_TNG_constructionship.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 172
+ },
+ "brg_TNG_cube": {
+  "sheet": "assets/turntables/brg_TNG_cube.webp",
+  "frames": 18,
+  "columns": 5,
+  "frameWidth": 256,
+  "frameHeight": 264
+ },
+ "brg_TNG_cube@brg_TNG_tacticalarmour": {
+  "sheet": "assets/turntables/brg_TNG_cube--brg_TNG_tacticalarmour.webp",
+  "frames": 18,
+  "columns": 5,
+  "frameWidth": 256,
+  "frameHeight": 267
+ },
+ "brg_TNG_destroyer": {
+  "sheet": "assets/turntables/brg_TNG_destroyer.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 137
+ },
+ "brg_TNG_detector": {
+  "sheet": "assets/turntables/brg_TNG_detector.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 149
+ },
+ "brg_TNG_diamond": {
+  "sheet": "assets/turntables/brg_TNG_diamond.webp",
+  "frames": 18,
+  "columns": 5,
+  "frameWidth": 226,
+  "frameHeight": 206
+ },
+ "brg_TNG_minelayer": {
+  "sheet": "assets/turntables/brg_TNG_minelayer.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 164
+ },
+ "brg_TNG_outpost": {
+  "sheet": "assets/turntables/brg_TNG_outpost.webp",
+  "frames": 18,
+  "columns": 6,
+  "frameWidth": 164,
+  "frameHeight": 318
+ },
+ "brg_TNG_probe": {
+  "sheet": "assets/turntables/brg_TNG_probe.webp",
+  "frames": 18,
+  "columns": 5,
+  "frameWidth": 256,
+  "frameHeight": 244
+ },
+ "brg_TNG_pulseturret": {
+  "sheet": "assets/turntables/brg_TNG_pulseturret.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 163
+ },
+ "brg_TNG_pyramid": {
+  "sheet": "assets/turntables/brg_TNG_pyramid.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 227
+ },
+ "brg_TNG_resourcecollector": {
+  "sheet": "assets/turntables/brg_TNG_resourcecollector.webp",
+  "frames": 18,
+  "columns": 5,
+  "frameWidth": 256,
+  "frameHeight": 324
+ },
+ "brg_TNG_resourcecontroller": {
+  "sheet": "assets/turntables/brg_TNG_resourcecontroller.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 147
+ },
+ "brg_TNG_scoutcube": {
+  "sheet": "assets/turntables/brg_TNG_scoutcube.webp",
+  "frames": 18,
+  "columns": 5,
+  "frameWidth": 256,
+  "frameHeight": 243
+ },
+ "brg_TNG_sphere": {
+  "sheet": "assets/turntables/brg_TNG_sphere.webp",
+  "frames": 18,
+  "columns": 5,
+  "frameWidth": 224,
+  "frameHeight": 220
+ },
+ "brg_TNG_torpedoturret": {
+  "sheet": "assets/turntables/brg_TNG_torpedoturret.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 217
+ },
+ "brg_TNG_transwarpgate": {
+  "sheet": "assets/turntables/brg_TNG_transwarpgate.webp",
+  "frames": 18,
+  "columns": 5,
+  "frameWidth": 256,
+  "frameHeight": 240
+ },
+ "brn_TNG_chelgrett": {
+  "sheet": "assets/turntables/brn_TNG_chelgrett.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 115
+ },
+ "car_TNG_advroboticsinstitute": {
+  "sheet": "assets/turntables/car_TNG_advroboticsinstitute.webp",
+  "frames": 18,
+  "columns": 6,
+  "frameWidth": 180,
+  "frameHeight": 322
+ },
+ "car_TNG_bomber": {
+  "sheet": "assets/turntables/car_TNG_bomber.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 113
+ },
+ "car_TNG_brinok": {
+  "sheet": "assets/turntables/car_TNG_brinok.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 106
+ },
+ "car_TNG_brinok_drone1": {
+  "sheet": "assets/turntables/car_TNG_brinok_drone1.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 117
+ },
+ "car_TNG_constructionship": {
+  "sheet": "assets/turntables/car_TNG_constructionship.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 138
+ },
+ "car_TNG_dreadnought": {
+  "sheet": "assets/turntables/car_TNG_dreadnought.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 117
+ },
+ "car_TNG_fighter": {
+  "sheet": "assets/turntables/car_TNG_fighter.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 138
+ },
+ "car_TNG_flagship": {
+  "sheet": "assets/turntables/car_TNG_flagship.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 111
+ },
+ "car_TNG_galor": {
+  "sheet": "assets/turntables/car_TNG_galor.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 120
+ },
+ "car_TNG_hideki": {
+  "sheet": "assets/turntables/car_TNG_hideki.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 130
+ },
+ "car_TNG_hideki_grey": {
+  "sheet": "assets/turntables/car_TNG_hideki_grey.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 130
+ },
+ "car_TNG_hutet": {
+  "sheet": "assets/turntables/car_TNG_hutet.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 154
+ },
+ "car_TNG_janissary": {
+  "sheet": "assets/turntables/car_TNG_janissary.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 111
+ },
+ "car_TNG_keldon": {
+  "sheet": "assets/turntables/car_TNG_keldon.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 111
+ },
+ "car_TNG_kulinor": {
+  "sheet": "assets/turntables/car_TNG_kulinor.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 132
+ },
+ "car_TNG_legate": {
+  "sheet": "assets/turntables/car_TNG_legate.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 126
+ },
+ "car_TNG_mogrund": {
+  "sheet": "assets/turntables/car_TNG_mogrund.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 104
+ },
+ "car_TNG_norin": {
+  "sheet": "assets/turntables/car_TNG_norin.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 132
+ },
+ "car_TNG_outpost": {
+  "sheet": "assets/turntables/car_TNG_outpost.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 248,
+  "frameHeight": 200
+ },
+ "car_TNG_repairship": {
+  "sheet": "assets/turntables/car_TNG_repairship.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 173
+ },
+ "car_TNG_resourcecollector": {
+  "sheet": "assets/turntables/car_TNG_resourcecollector.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 123
+ },
+ "car_TNG_resourcecontroller": {
+  "sheet": "assets/turntables/car_TNG_resourcecontroller.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 150
+ },
+ "car_TNG_sartan": {
+  "sheet": "assets/turntables/car_TNG_sartan.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 141
+ },
+ "car_TNG_shipyard": {
+  "sheet": "assets/turntables/car_TNG_shipyard.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 156
+ },
+ "car_TNG_shipyard_S": {
+  "sheet": "assets/turntables/car_TNG_shipyard_S.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 127
+ },
+ "car_TNG_shuttlepod": {
+  "sheet": "assets/turntables/car_TNG_shuttlepod.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 121
+ },
+ "car_TNG_tonga": {
+  "sheet": "assets/turntables/car_TNG_tonga.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 120
+ },
+ "car_TNG_tonga@car_TNG_tonga_pods": {
+  "sheet": "assets/turntables/car_TNG_tonga--car_TNG_tonga_pods.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 120
+ },
+ "car_TNG_tonga@car_TNG_tonga_sensors": {
+  "sheet": "assets/turntables/car_TNG_tonga--car_TNG_tonga_sensors.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 119
+ },
+ "car_TNG_turret": {
+  "sheet": "assets/turntables/car_TNG_turret.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 212
+ },
+ "car_TNG_turret@CodeRed": {
+  "sheet": "assets/turntables/car_TNG_turret--CodeRed.webp",
+  "frames": 18,
+  "columns": 5,
+  "frameWidth": 256,
+  "frameHeight": 270
+ },
+ "dom_TNG_CIV_sciencestation": {
+  "sheet": "assets/turntables/dom_TNG_CIV_sciencestation.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 248,
+  "frameHeight": 162
+ },
+ "dom_TNG_CIV_tradestation": {
+  "sheet": "assets/turntables/dom_TNG_CIV_tradestation.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 176
+ },
+ "dom_TNG_CIV_upgradestation": {
+  "sheet": "assets/turntables/dom_TNG_CIV_upgradestation.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 132
+ },
+ "dom_TNG_assault": {
+  "sheet": "assets/turntables/dom_TNG_assault.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 143
+ },
+ "dom_TNG_bugship": {
+  "sheet": "assets/turntables/dom_TNG_bugship.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 152
+ },
+ "dom_TNG_carrier": {
+  "sheet": "assets/turntables/dom_TNG_carrier.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 127
+ },
+ "dom_TNG_constructionship": {
+  "sheet": "assets/turntables/dom_TNG_constructionship.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 136
+ },
+ "dom_TNG_dreadnought": {
+  "sheet": "assets/turntables/dom_TNG_dreadnought.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 144
+ },
+ "dom_TNG_embassy": {
+  "sheet": "assets/turntables/dom_TNG_embassy.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 111
+ },
+ "dom_TNG_fighter": {
+  "sheet": "assets/turntables/dom_TNG_fighter.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 119
+ },
+ "dom_TNG_flagship": {
+  "sheet": "assets/turntables/dom_TNG_flagship.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 127
+ },
+ "dom_TNG_heavycruiser": {
+  "sheet": "assets/turntables/dom_TNG_heavycruiser.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 141
+ },
+ "dom_TNG_lightcruiser": {
+  "sheet": "assets/turntables/dom_TNG_lightcruiser.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 124
+ },
+ "dom_TNG_outpost": {
+  "sheet": "assets/turntables/dom_TNG_outpost.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 202
+ },
+ "dom_TNG_pulseturret": {
+  "sheet": "assets/turntables/dom_TNG_pulseturret.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 144
+ },
+ "dom_TNG_repairship": {
+  "sheet": "assets/turntables/dom_TNG_repairship.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 175
+ },
+ "dom_TNG_resourcecollector": {
+  "sheet": "assets/turntables/dom_TNG_resourcecollector.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 164
+ },
+ "dom_TNG_resourcecontroller": {
+  "sheet": "assets/turntables/dom_TNG_resourcecontroller.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 150
+ },
+ "dom_TNG_scout": {
+  "sheet": "assets/turntables/dom_TNG_scout.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 124
+ },
+ "dom_TNG_shipyard": {
+  "sheet": "assets/turntables/dom_TNG_shipyard.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 161
+ },
+ "dom_TNG_shipyard_D": {
+  "sheet": "assets/turntables/dom_TNG_shipyard_D.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 165
+ },
+ "dom_TNG_shipyard_S": {
+  "sheet": "assets/turntables/dom_TNG_shipyard_S.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 144
+ },
+ "dom_TNG_starbase": {
+  "sheet": "assets/turntables/dom_TNG_starbase.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 206
+ },
+ "dom_TNG_strike": {
+  "sheet": "assets/turntables/dom_TNG_strike.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 141
+ },
+ "dom_TNG_torpedoturret": {
+  "sheet": "assets/turntables/dom_TNG_torpedoturret.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 188
+ },
+ "dom_TNG_virulent": {
+  "sheet": "assets/turntables/dom_TNG_virulent.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 122
+ },
+ "dom_TNG_warship": {
+  "sheet": "assets/turntables/dom_TNG_warship.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 148
+ },
+ "fed_ENT_AND_destroyer": {
+  "sheet": "assets/turntables/fed_ENT_AND_destroyer.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 155
+ },
+ "fed_ENT_AND_kumari": {
+  "sheet": "assets/turntables/fed_ENT_AND_kumari.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 114
+ },
+ "fed_ENT_AND_miklon": {
+  "sheet": "assets/turntables/fed_ENT_AND_miklon.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 113
+ },
+ "fed_ENT_TEL_tgarim": {
+  "sheet": "assets/turntables/fed_ENT_TEL_tgarim.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 161
+ },
+ "fed_ENT_TEL_tgarim@fed_ENT_arkonian_refit": {
+  "sheet": "assets/turntables/fed_ENT_TEL_tgarim--fed_ENT_arkonian_refit.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 161
+ },
+ "fed_ENT_VUL_cruiser": {
+  "sheet": "assets/turntables/fed_ENT_VUL_cruiser.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 131
+ },
+ "fed_ENT_VUL_dkyr": {
+  "sheet": "assets/turntables/fed_ENT_VUL_dkyr.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 113
+ },
+ "fed_ENT_VUL_dkyr_shuttle": {
+  "sheet": "assets/turntables/fed_ENT_VUL_dkyr_shuttle.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 136
+ },
+ "fed_ENT_VUL_surak": {
+  "sheet": "assets/turntables/fed_ENT_VUL_surak.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 109
+ },
+ "fed_ENT_VUL_vahklas": {
+  "sheet": "assets/turntables/fed_ENT_VUL_vahklas.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 143
+ },
+ "fed_ENT_bonaventure": {
+  "sheet": "assets/turntables/fed_ENT_bonaventure.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 170
+ },
+ "fed_ENT_challenger": {
+  "sheet": "assets/turntables/fed_ENT_challenger.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 122
+ },
+ "fed_ENT_constructor": {
+  "sheet": "assets/turntables/fed_ENT_constructor.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 211
+ },
+ "fed_ENT_daedalus": {
+  "sheet": "assets/turntables/fed_ENT_daedalus.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 142
+ },
+ "fed_ENT_discovery": {
+  "sheet": "assets/turntables/fed_ENT_discovery.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 125
+ },
+ "fed_ENT_flagship": {
+  "sheet": "assets/turntables/fed_ENT_flagship.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 123
+ },
+ "fed_ENT_flagship@fed_ENT_nx_refit": {
+  "sheet": "assets/turntables/fed_ENT_flagship--fed_ENT_nx_refit.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 143
+ },
+ "fed_ENT_freedom": {
+  "sheet": "assets/turntables/fed_ENT_freedom.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 137
+ },
+ "fed_ENT_icarus": {
+  "sheet": "assets/turntables/fed_ENT_icarus.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 174
+ },
+ "fed_ENT_intrepid": {
+  "sheet": "assets/turntables/fed_ENT_intrepid.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 132
+ },
+ "fed_ENT_maco": {
+  "sheet": "assets/turntables/fed_ENT_maco.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 139
+ },
+ "fed_ENT_minuteman": {
+  "sheet": "assets/turntables/fed_ENT_minuteman.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 124
+ },
+ "fed_ENT_nx": {
+  "sheet": "assets/turntables/fed_ENT_nx.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 123
+ },
+ "fed_ENT_nx@fed_ENT_nx_refit": {
+  "sheet": "assets/turntables/fed_ENT_nx--fed_ENT_nx_refit.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 143
+ },
+ "fed_ENT_outpost": {
+  "sheet": "assets/turntables/fed_ENT_outpost.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 207
+ },
+ "fed_ENT_poseidon": {
+  "sheet": "assets/turntables/fed_ENT_poseidon.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 132
+ },
+ "fed_ENT_resourcecollector": {
+  "sheet": "assets/turntables/fed_ENT_resourcecollector.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 149
+ },
+ "fed_ENT_resourcecontroller": {
+  "sheet": "assets/turntables/fed_ENT_resourcecontroller.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 129
+ },
+ "fed_ENT_sarajevo": {
+  "sheet": "assets/turntables/fed_ENT_sarajevo.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 125
+ },
+ "fed_ENT_shipyard": {
+  "sheet": "assets/turntables/fed_ENT_shipyard.webp",
+  "frames": 18,
+  "columns": 5,
+  "frameWidth": 256,
+  "frameHeight": 229
+ },
+ "fed_ENT_shipyard_S": {
+  "sheet": "assets/turntables/fed_ENT_shipyard_S.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 174
+ },
+ "fed_ENT_shuttlepod": {
+  "sheet": "assets/turntables/fed_ENT_shuttlepod.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 168
+ },
+ "fed_ENT_yorktown": {
+  "sheet": "assets/turntables/fed_ENT_yorktown.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 116
+ },
+ "fed_TES_flagship": {
+  "sheet": "assets/turntables/fed_TES_flagship.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 113
+ },
+ "fed_TMP_akula": {
+  "sheet": "assets/turntables/fed_TMP_akula.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 171
+ },
+ "fed_TMP_ambassador": {
+  "sheet": "assets/turntables/fed_TMP_ambassador.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 126
+ },
+ "fed_TMP_centaur": {
+  "sheet": "assets/turntables/fed_TMP_centaur.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 133
+ },
+ "fed_TMP_constellation": {
+  "sheet": "assets/turntables/fed_TMP_constellation.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 157
+ },
+ "fed_TMP_constitution": {
+  "sheet": "assets/turntables/fed_TMP_constitution.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 146
+ },
+ "fed_TMP_constructor": {
+  "sheet": "assets/turntables/fed_TMP_constructor.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 167
+ },
+ "fed_TMP_enterprise": {
+  "sheet": "assets/turntables/fed_TMP_enterprise.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 146
+ },
+ "fed_TMP_excelsior": {
+  "sheet": "assets/turntables/fed_TMP_excelsior.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 130
+ },
+ "fed_TMP_excelsior@fed_TMP_excelsior_refit": {
+  "sheet": "assets/turntables/fed_TMP_excelsior--fed_TMP_excelsior_refit.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 134
+ },
+ "fed_TMP_fighter": {
+  "sheet": "assets/turntables/fed_TMP_fighter.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 127
+ },
+ "fed_TMP_flagship": {
+  "sheet": "assets/turntables/fed_TMP_flagship.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 134
+ },
+ "fed_TMP_midway": {
+  "sheet": "assets/turntables/fed_TMP_midway.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 131
+ },
+ "fed_TMP_miranda": {
+  "sheet": "assets/turntables/fed_TMP_miranda.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 136
+ },
+ "fed_TMP_miranda@fed_TMP_miranda_cannons": {
+  "sheet": "assets/turntables/fed_TMP_miranda--fed_TMP_miranda_cannons.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 136
+ },
+ "fed_TMP_miranda@fed_TMP_miranda_rollbar": {
+  "sheet": "assets/turntables/fed_TMP_miranda--fed_TMP_miranda_rollbar.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 150
+ },
+ "fed_TMP_miranda@fed_TMP_miranda_sensors": {
+  "sheet": "assets/turntables/fed_TMP_miranda--fed_TMP_miranda_sensors.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 149
+ },
+ "fed_TMP_oberth": {
+  "sheet": "assets/turntables/fed_TMP_oberth.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 120
+ },
+ "fed_TMP_oberth@fed_TMP_oberth_medical": {
+  "sheet": "assets/turntables/fed_TMP_oberth--fed_TMP_oberth_medical.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 168
+ },
+ "fed_TMP_oberth@fed_TMP_oberth_rollbar": {
+  "sheet": "assets/turntables/fed_TMP_oberth--fed_TMP_oberth_rollbar.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 147
+ },
+ "fed_TMP_oberth@fed_TMP_oberth_sensorsuite": {
+  "sheet": "assets/turntables/fed_TMP_oberth--fed_TMP_oberth_sensorsuite.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 146
+ },
+ "fed_TMP_phantom": {
+  "sheet": "assets/turntables/fed_TMP_phantom.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 127
+ },
+ "fed_TMP_regula": {
+  "sheet": "assets/turntables/fed_TMP_regula.webp",
+  "frames": 18,
+  "columns": 6,
+  "frameWidth": 204,
+  "frameHeight": 294
+ },
+ "fed_TMP_reliant": {
+  "sheet": "assets/turntables/fed_TMP_reliant.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 150
+ },
+ "fed_TMP_resourcecollector": {
+  "sheet": "assets/turntables/fed_TMP_resourcecollector.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 166
+ },
+ "fed_TMP_resourcecontroller": {
+  "sheet": "assets/turntables/fed_TMP_resourcecontroller.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 200
+ },
+ "fed_TMP_shipyard": {
+  "sheet": "assets/turntables/fed_TMP_shipyard.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 156
+ },
+ "fed_TMP_shipyard_S": {
+  "sheet": "assets/turntables/fed_TMP_shipyard_S.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 142
+ },
+ "fed_TMP_spectre": {
+  "sheet": "assets/turntables/fed_TMP_spectre.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 131
+ },
+ "fed_TNG_CIV_orbitaloffices": {
+  "sheet": "assets/turntables/fed_TNG_CIV_orbitaloffices.webp",
+  "frames": 18,
+  "columns": 5,
+  "frameWidth": 218,
+  "frameHeight": 210
+ },
+ "fed_TNG_CIV_tradingstation": {
+  "sheet": "assets/turntables/fed_TNG_CIV_tradingstation.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 147
+ },
+ "fed_TNG_CIV_upgradestation": {
+  "sheet": "assets/turntables/fed_TNG_CIV_upgradestation.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 254,
+  "frameHeight": 224
+ },
+ "fed_TNG_akira": {
+  "sheet": "assets/turntables/fed_TNG_akira.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 134
+ },
+ "fed_TNG_ambassador_refit": {
+  "sheet": "assets/turntables/fed_TNG_ambassador_refit.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 120
+ },
+ "fed_TNG_brisbane": {
+  "sheet": "assets/turntables/fed_TNG_brisbane.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 118
+ },
+ "fed_TNG_brisbane_alpha": {
+  "sheet": "assets/turntables/fed_TNG_brisbane_alpha.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 127
+ },
+ "fed_TNG_brisbane_beta": {
+  "sheet": "assets/turntables/fed_TNG_brisbane_beta.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 111
+ },
+ "fed_TNG_brisbane_gamma": {
+  "sheet": "assets/turntables/fed_TNG_brisbane_gamma.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 107
+ },
+ "fed_TNG_constructionship": {
+  "sheet": "assets/turntables/fed_TNG_constructionship.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 134
+ },
+ "fed_TNG_constructor1": {
+  "sheet": "assets/turntables/fed_TNG_constructor1.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 117
+ },
+ "fed_TNG_defiant": {
+  "sheet": "assets/turntables/fed_TNG_defiant.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 110
+ },
+ "fed_TNG_fighter": {
+  "sheet": "assets/turntables/fed_TNG_fighter.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 137
+ },
+ "fed_TNG_flagship": {
+  "sheet": "assets/turntables/fed_TNG_flagship.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 115
+ },
+ "fed_TNG_galaxy": {
+  "sheet": "assets/turntables/fed_TNG_galaxy.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 119
+ },
+ "fed_TNG_galaxy_saucer": {
+  "sheet": "assets/turntables/fed_TNG_galaxy_saucer.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 107
+ },
+ "fed_TNG_galaxy_stardrive": {
+  "sheet": "assets/turntables/fed_TNG_galaxy_stardrive.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 118
+ },
+ "fed_TNG_intrepid": {
+  "sheet": "assets/turntables/fed_TNG_intrepid.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 123
+ },
+ "fed_TNG_nebula": {
+  "sheet": "assets/turntables/fed_TNG_nebula.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 147
+ },
+ "fed_TNG_nebula@fed_TNG_nebula_nacelles": {
+  "sheet": "assets/turntables/fed_TNG_nebula--fed_TNG_nebula_nacelles.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 150
+ },
+ "fed_TNG_nebula@fed_TNG_nebula_sensordish": {
+  "sheet": "assets/turntables/fed_TNG_nebula--fed_TNG_nebula_sensordish.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 147
+ },
+ "fed_TNG_nebula@fed_TNG_nebula_torpbattery": {
+  "sheet": "assets/turntables/fed_TNG_nebula--fed_TNG_nebula_torpbattery.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 154
+ },
+ "fed_TNG_norway": {
+  "sheet": "assets/turntables/fed_TNG_norway.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 112
+ },
+ "fed_TNG_nova": {
+  "sheet": "assets/turntables/fed_TNG_nova.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 129
+ },
+ "fed_TNG_outpost": {
+  "sheet": "assets/turntables/fed_TNG_outpost.webp",
+  "frames": 18,
+  "columns": 5,
+  "frameWidth": 256,
+  "frameHeight": 229
+ },
+ "fed_TNG_peregrine": {
+  "sheet": "assets/turntables/fed_TNG_peregrine.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 149
+ },
+ "fed_TNG_phaserturret": {
+  "sheet": "assets/turntables/fed_TNG_phaserturret.webp",
+  "frames": 18,
+  "columns": 5,
+  "frameWidth": 206,
+  "frameHeight": 236
+ },
+ "fed_TNG_premonition": {
+  "sheet": "assets/turntables/fed_TNG_premonition.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 104
+ },
+ "fed_TNG_probe": {
+  "sheet": "assets/turntables/fed_TNG_probe.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 148
+ },
+ "fed_TNG_prometheus": {
+  "sheet": "assets/turntables/fed_TNG_prometheus.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 121
+ },
+ "fed_TNG_prometheus_alpha": {
+  "sheet": "assets/turntables/fed_TNG_prometheus_alpha.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 133
+ },
+ "fed_TNG_prometheus_beta": {
+  "sheet": "assets/turntables/fed_TNG_prometheus_beta.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 106
+ },
+ "fed_TNG_prometheus_gamma": {
+  "sheet": "assets/turntables/fed_TNG_prometheus_gamma.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 106
+ },
+ "fed_TNG_repairship": {
+  "sheet": "assets/turntables/fed_TNG_repairship.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 146
+ },
+ "fed_TNG_resourcecollector": {
+  "sheet": "assets/turntables/fed_TNG_resourcecollector.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 164
+ },
+ "fed_TNG_resourcecontroller": {
+  "sheet": "assets/turntables/fed_TNG_resourcecontroller.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 119
+ },
+ "fed_TNG_sabre": {
+  "sheet": "assets/turntables/fed_TNG_sabre.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 133
+ },
+ "fed_TNG_shipyard": {
+  "sheet": "assets/turntables/fed_TNG_shipyard.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 139
+ },
+ "fed_TNG_shipyard_S": {
+  "sheet": "assets/turntables/fed_TNG_shipyard_S.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 147
+ },
+ "fed_TNG_sovereign": {
+  "sheet": "assets/turntables/fed_TNG_sovereign.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 115
+ },
+ "fed_TNG_starbase": {
+  "sheet": "assets/turntables/fed_TNG_starbase.webp",
+  "frames": 18,
+  "columns": 5,
+  "frameWidth": 202,
+  "frameHeight": 248
+ },
+ "fed_TNG_steamrunner": {
+  "sheet": "assets/turntables/fed_TNG_steamrunner.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 116
+ },
+ "fed_TNG_superweapon": {
+  "sheet": "assets/turntables/fed_TNG_superweapon.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 169
+ },
+ "fed_TNG_torpedoturret": {
+  "sheet": "assets/turntables/fed_TNG_torpedoturret.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 161
+ },
+ "fed_TNG_typhon": {
+  "sheet": "assets/turntables/fed_TNG_typhon.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 130
+ },
+ "fed_TNG_valkyrie_mk1": {
+  "sheet": "assets/turntables/fed_TNG_valkyrie_mk1.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 140
+ },
+ "fed_TNG_valkyrie_mk2": {
+  "sheet": "assets/turntables/fed_TNG_valkyrie_mk2.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 164
+ },
+ "fed_TNG_valkyrie_mk3": {
+  "sheet": "assets/turntables/fed_TNG_valkyrie_mk3.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 149
+ },
+ "fed_TNG_venture": {
+  "sheet": "assets/turntables/fed_TNG_venture.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 114
+ },
+ "fed_TOS_DY750": {
+  "sheet": "assets/turntables/fed_TOS_DY750.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 129
+ },
+ "fed_TOS_archer": {
+  "sheet": "assets/turntables/fed_TOS_archer.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 128
+ },
+ "fed_TOS_ares": {
+  "sheet": "assets/turntables/fed_TOS_ares.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 135
+ },
+ "fed_TOS_constitution": {
+  "sheet": "assets/turntables/fed_TOS_constitution.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 148
+ },
+ "fed_TOS_constructor": {
+  "sheet": "assets/turntables/fed_TOS_constructor.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 167
+ },
+ "fed_TOS_coyote": {
+  "sheet": "assets/turntables/fed_TOS_coyote.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 126
+ },
+ "fed_TOS_detroyat": {
+  "sheet": "assets/turntables/fed_TOS_detroyat.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 114
+ },
+ "fed_TOS_dreadnought": {
+  "sheet": "assets/turntables/fed_TOS_dreadnought.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 113
+ },
+ "fed_TOS_flagship": {
+  "sheet": "assets/turntables/fed_TOS_flagship.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 148
+ },
+ "fed_TOS_lightning": {
+  "sheet": "assets/turntables/fed_TOS_lightning.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 133
+ },
+ "fed_TOS_mcquarrie": {
+  "sheet": "assets/turntables/fed_TOS_mcquarrie.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 124
+ },
+ "fed_TOS_outpost": {
+  "sheet": "assets/turntables/fed_TOS_outpost.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 146
+ },
+ "fed_TOS_resourcecollector": {
+  "sheet": "assets/turntables/fed_TOS_resourcecollector.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 166
+ },
+ "fed_TOS_resourcecontroller": {
+  "sheet": "assets/turntables/fed_TOS_resourcecontroller.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 167
+ },
+ "fed_TOS_saladin": {
+  "sheet": "assets/turntables/fed_TOS_saladin.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 139
+ },
+ "fed_TOS_shipyard": {
+  "sheet": "assets/turntables/fed_TOS_shipyard.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 144
+ },
+ "fed_TOS_shipyard_S": {
+  "sheet": "assets/turntables/fed_TOS_shipyard_S.webp",
+  "frames": 18,
+  "columns": 5,
+  "frameWidth": 256,
+  "frameHeight": 229
+ },
+ "fed_TOS_starbase": {
+  "sheet": "assets/turntables/fed_TOS_starbase.webp",
+  "frames": 18,
+  "columns": 5,
+  "frameWidth": 212,
+  "frameHeight": 224
+ },
+ "fer_TNG_dkora": {
+  "sheet": "assets/turntables/fer_TNG_dkora.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 134
+ },
+ "grn_TMP_bomber": {
+  "sheet": "assets/turntables/grn_TMP_bomber.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 176
+ },
+ "grn_TMP_destroyer": {
+  "sheet": "assets/turntables/grn_TMP_destroyer.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 199
+ },
+ "grn_TMP_fighter": {
+  "sheet": "assets/turntables/grn_TMP_fighter.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 120
+ },
+ "grn_TMP_frigate": {
+  "sheet": "assets/turntables/grn_TMP_frigate.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 154
+ },
+ "grn_TMP_grendel": {
+  "sheet": "assets/turntables/grn_TMP_grendel.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 200
+ },
+ "grn_TMP_heavycruiser": {
+  "sheet": "assets/turntables/grn_TMP_heavycruiser.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 151
+ },
+ "grn_TMP_lightcruiser": {
+  "sheet": "assets/turntables/grn_TMP_lightcruiser.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 196
+ },
+ "grn_TMP_outpost": {
+  "sheet": "assets/turntables/grn_TMP_outpost.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 254,
+  "frameHeight": 214
+ },
+ "grn_TMP_pulseturret": {
+  "sheet": "assets/turntables/grn_TMP_pulseturret.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 131
+ },
+ "grn_TMP_repairship": {
+  "sheet": "assets/turntables/grn_TMP_repairship.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 145
+ },
+ "grn_TMP_resourcecollector": {
+  "sheet": "assets/turntables/grn_TMP_resourcecollector.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 150
+ },
+ "grn_TMP_resourcecontroller": {
+  "sheet": "assets/turntables/grn_TMP_resourcecontroller.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 134
+ },
+ "grn_TMP_scout": {
+  "sheet": "assets/turntables/grn_TMP_scout.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 131
+ },
+ "grn_TMP_sensorsatellite": {
+  "sheet": "assets/turntables/grn_TMP_sensorsatellite.webp",
+  "frames": 18,
+  "columns": 5,
+  "frameWidth": 256,
+  "frameHeight": 313
+ },
+ "grn_TMP_shipyard": {
+  "sheet": "assets/turntables/grn_TMP_shipyard.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 182
+ },
+ "grn_TMP_shipyard_S": {
+  "sheet": "assets/turntables/grn_TMP_shipyard_S.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 195
+ },
+ "grn_TMP_torpedoturret": {
+  "sheet": "assets/turntables/grn_TMP_torpedoturret.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 157
+ },
+ "kng_ENT_bop": {
+  "sheet": "assets/turntables/kng_ENT_bop.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 124
+ },
+ "kng_ENT_bop@CodeRed": {
+  "sheet": "assets/turntables/kng_ENT_bop--CodeRed.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 177
+ },
+ "kng_ENT_constructor": {
+  "sheet": "assets/turntables/kng_ENT_constructor.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 165
+ },
+ "kng_ENT_d4": {
+  "sheet": "assets/turntables/kng_ENT_d4.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 135
+ },
+ "kng_ENT_d5": {
+  "sheet": "assets/turntables/kng_ENT_d5.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 131
+ },
+ "kng_ENT_goroth": {
+  "sheet": "assets/turntables/kng_ENT_goroth.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 141
+ },
+ "kng_ENT_k18": {
+  "sheet": "assets/turntables/kng_ENT_k18.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 126
+ },
+ "kng_ENT_k5": {
+  "sheet": "assets/turntables/kng_ENT_k5.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 132
+ },
+ "kng_ENT_outpost": {
+  "sheet": "assets/turntables/kng_ENT_outpost.webp",
+  "frames": 18,
+  "columns": 8,
+  "frameWidth": 110,
+  "frameHeight": 350
+ },
+ "kng_ENT_raptor": {
+  "sheet": "assets/turntables/kng_ENT_raptor.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 117
+ },
+ "kng_ENT_resourcecollector": {
+  "sheet": "assets/turntables/kng_ENT_resourcecollector.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 165
+ },
+ "kng_ENT_resourcecontroller": {
+  "sheet": "assets/turntables/kng_ENT_resourcecontroller.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 132
+ },
+ "kng_ENT_shipyard": {
+  "sheet": "assets/turntables/kng_ENT_shipyard.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 168
+ },
+ "kng_ENT_stinger": {
+  "sheet": "assets/turntables/kng_ENT_stinger.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 132
+ },
+ "kng_ENT_toron": {
+  "sheet": "assets/turntables/kng_ENT_toron.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 212
+ },
+ "kng_TMP_bertaa": {
+  "sheet": "assets/turntables/kng_TMP_bertaa.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 128
+ },
+ "kng_TMP_bomber": {
+  "sheet": "assets/turntables/kng_TMP_bomber.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 143
+ },
+ "kng_TMP_brel": {
+  "sheet": "assets/turntables/kng_TMP_brel.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 114
+ },
+ "kng_TMP_brel@CodeRed": {
+  "sheet": "assets/turntables/kng_TMP_brel--CodeRed.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 180
+ },
+ "kng_TMP_constructor": {
+  "sheet": "assets/turntables/kng_TMP_constructor.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 135
+ },
+ "kng_TMP_fighter": {
+  "sheet": "assets/turntables/kng_TMP_fighter.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 140
+ },
+ "kng_TMP_kleev": {
+  "sheet": "assets/turntables/kng_TMP_kleev.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 118
+ },
+ "kng_TMP_ktinga": {
+  "sheet": "assets/turntables/kng_TMP_ktinga.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 146
+ },
+ "kng_TMP_nuqpah": {
+  "sheet": "assets/turntables/kng_TMP_nuqpah.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 142
+ },
+ "kng_TMP_outpost": {
+  "sheet": "assets/turntables/kng_TMP_outpost.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 186
+ },
+ "kng_TMP_resourcecollector": {
+  "sheet": "assets/turntables/kng_TMP_resourcecollector.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 136
+ },
+ "kng_TMP_resourcecontroller": {
+  "sheet": "assets/turntables/kng_TMP_resourcecontroller.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 149
+ },
+ "kng_TMP_shipyard_S": {
+  "sheet": "assets/turntables/kng_TMP_shipyard_S.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 167
+ },
+ "kng_TMP_stalker": {
+  "sheet": "assets/turntables/kng_TMP_stalker.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 129
+ },
+ "kng_TMP_swordofkahless": {
+  "sheet": "assets/turntables/kng_TMP_swordofkahless.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 160
+ },
+ "kng_TMP_tamhey": {
+  "sheet": "assets/turntables/kng_TMP_tamhey.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 148
+ },
+ "kng_TMP_vodleh": {
+  "sheet": "assets/turntables/kng_TMP_vodleh.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 145
+ },
+ "kng_TNG_CIV_orbitalstation": {
+  "sheet": "assets/turntables/kng_TNG_CIV_orbitalstation.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 125
+ },
+ "kng_TNG_CIV_ordinancedepot": {
+  "sheet": "assets/turntables/kng_TNG_CIV_ordinancedepot.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 127
+ },
+ "kng_TNG_CIV_tradingstation": {
+  "sheet": "assets/turntables/kng_TNG_CIV_tradingstation.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 220
+ },
+ "kng_TNG_E7": {
+  "sheet": "assets/turntables/kng_TNG_E7.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 124
+ },
+ "kng_TNG_bomber": {
+  "sheet": "assets/turntables/kng_TNG_bomber.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 127
+ },
+ "kng_TNG_constructionship": {
+  "sheet": "assets/turntables/kng_TNG_constructionship.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 148
+ },
+ "kng_TNG_fekhlr": {
+  "sheet": "assets/turntables/kng_TNG_fekhlr.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 138
+ },
+ "kng_TNG_fighter": {
+  "sheet": "assets/turntables/kng_TNG_fighter.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 178
+ },
+ "kng_TNG_fighter@CodeRed": {
+  "sheet": "assets/turntables/kng_TNG_fighter--CodeRed.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 141
+ },
+ "kng_TNG_flagship": {
+  "sheet": "assets/turntables/kng_TNG_flagship.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 131
+ },
+ "kng_TNG_jacheng": {
+  "sheet": "assets/turntables/kng_TNG_jacheng.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 168
+ },
+ "kng_TNG_kron": {
+  "sheet": "assets/turntables/kng_TNG_kron.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 129
+ },
+ "kng_TNG_ktochvah": {
+  "sheet": "assets/turntables/kng_TNG_ktochvah.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 139
+ },
+ "kng_TNG_ktochvah@DisruptorAnim": {
+  "sheet": "assets/turntables/kng_TNG_ktochvah--DisruptorAnim.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 141
+ },
+ "kng_TNG_kvek": {
+  "sheet": "assets/turntables/kng_TNG_kvek.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 125
+ },
+ "kng_TNG_kvort": {
+  "sheet": "assets/turntables/kng_TNG_kvort.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 114
+ },
+ "kng_TNG_neghvar": {
+  "sheet": "assets/turntables/kng_TNG_neghvar.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 121
+ },
+ "kng_TNG_neghvar@PulseAnim": {
+  "sheet": "assets/turntables/kng_TNG_neghvar--PulseAnim.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 131
+ },
+ "kng_TNG_nuqduj": {
+  "sheet": "assets/turntables/kng_TNG_nuqduj.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 127
+ },
+ "kng_TNG_outpost": {
+  "sheet": "assets/turntables/kng_TNG_outpost.webp",
+  "frames": 18,
+  "columns": 5,
+  "frameWidth": 242,
+  "frameHeight": 272
+ },
+ "kng_TNG_probe": {
+  "sheet": "assets/turntables/kng_TNG_probe.webp",
+  "frames": 18,
+  "columns": 5,
+  "frameWidth": 242,
+  "frameHeight": 228
+ },
+ "kng_TNG_pulseturret": {
+  "sheet": "assets/turntables/kng_TNG_pulseturret.webp",
+  "frames": 18,
+  "columns": 6,
+  "frameWidth": 202,
+  "frameHeight": 312
+ },
+ "kng_TNG_repairship": {
+  "sheet": "assets/turntables/kng_TNG_repairship.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 146
+ },
+ "kng_TNG_resourcecollector": {
+  "sheet": "assets/turntables/kng_TNG_resourcecollector.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 137
+ },
+ "kng_TNG_resourcecontroller": {
+  "sheet": "assets/turntables/kng_TNG_resourcecontroller.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 145
+ },
+ "kng_TNG_shipyard": {
+  "sheet": "assets/turntables/kng_TNG_shipyard.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 170
+ },
+ "kng_TNG_shipyard_D": {
+  "sheet": "assets/turntables/kng_TNG_shipyard_D.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 127
+ },
+ "kng_TNG_shipyard_S": {
+  "sheet": "assets/turntables/kng_TNG_shipyard_S.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 123
+ },
+ "kng_TNG_starbase": {
+  "sheet": "assets/turntables/kng_TNG_starbase.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 210
+ },
+ "kng_TNG_suqjagh": {
+  "sheet": "assets/turntables/kng_TNG_suqjagh.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 127
+ },
+ "kng_TNG_torpedoturret": {
+  "sheet": "assets/turntables/kng_TNG_torpedoturret.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 219
+ },
+ "kng_TNG_vorcha": {
+  "sheet": "assets/turntables/kng_TNG_vorcha.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 131
+ },
+ "kng_TOS_bomber": {
+  "sheet": "assets/turntables/kng_TOS_bomber.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 127
+ },
+ "kng_TOS_constructor": {
+  "sheet": "assets/turntables/kng_TOS_constructor.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 165
+ },
+ "kng_TOS_d12": {
+  "sheet": "assets/turntables/kng_TOS_d12.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 145
+ },
+ "kng_TOS_d3": {
+  "sheet": "assets/turntables/kng_TOS_d3.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 158
+ },
+ "kng_TOS_d7": {
+  "sheet": "assets/turntables/kng_TOS_d7.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 145
+ },
+ "kng_TOS_fighter": {
+  "sheet": "assets/turntables/kng_TOS_fighter.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 135
+ },
+ "kng_TOS_flagship": {
+  "sheet": "assets/turntables/kng_TOS_flagship.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 145
+ },
+ "kng_TOS_k30": {
+  "sheet": "assets/turntables/kng_TOS_k30.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 141
+ },
+ "kng_TOS_outpost": {
+  "sheet": "assets/turntables/kng_TOS_outpost.webp",
+  "frames": 18,
+  "columns": 6,
+  "frameWidth": 218,
+  "frameHeight": 316
+ },
+ "kng_TOS_predator": {
+  "sheet": "assets/turntables/kng_TOS_predator.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 138
+ },
+ "kng_TOS_ravenous": {
+  "sheet": "assets/turntables/kng_TOS_ravenous.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 131
+ },
+ "kng_TOS_resourcecollector": {
+  "sheet": "assets/turntables/kng_TOS_resourcecollector.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 165
+ },
+ "kng_TOS_resourcecontroller": {
+  "sheet": "assets/turntables/kng_TOS_resourcecontroller.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 147
+ },
+ "kng_TOS_shipyard_S": {
+  "sheet": "assets/turntables/kng_TOS_shipyard_S.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 161
+ },
+ "rom_ENT_bomber": {
+  "sheet": "assets/turntables/rom_ENT_bomber.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 130
+ },
+ "rom_ENT_chhavran": {
+  "sheet": "assets/turntables/rom_ENT_chhavran.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 138
+ },
+ "rom_ENT_chrihan": {
+  "sheet": "assets/turntables/rom_ENT_chrihan.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 133
+ },
+ "rom_ENT_constructor": {
+  "sheet": "assets/turntables/rom_ENT_constructor.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 138
+ },
+ "rom_ENT_dreadnought": {
+  "sheet": "assets/turntables/rom_ENT_dreadnought.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 142
+ },
+ "rom_ENT_drone1": {
+  "sheet": "assets/turntables/rom_ENT_drone1.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 140
+ },
+ "rom_ENT_erehin": {
+  "sheet": "assets/turntables/rom_ENT_erehin.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 130
+ },
+ "rom_ENT_fighter": {
+  "sheet": "assets/turntables/rom_ENT_fighter.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 149
+ },
+ "rom_ENT_flagship": {
+  "sheet": "assets/turntables/rom_ENT_flagship.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 142
+ },
+ "rom_ENT_jorek": {
+  "sheet": "assets/turntables/rom_ENT_jorek.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 144
+ },
+ "rom_ENT_karatek": {
+  "sheet": "assets/turntables/rom_ENT_karatek.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 110
+ },
+ "rom_ENT_outpost": {
+  "sheet": "assets/turntables/rom_ENT_outpost.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 163
+ },
+ "rom_ENT_pontilus": {
+  "sheet": "assets/turntables/rom_ENT_pontilus.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 143
+ },
+ "rom_ENT_resourcecollector": {
+  "sheet": "assets/turntables/rom_ENT_resourcecollector.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 138
+ },
+ "rom_ENT_resourcecontroller": {
+  "sheet": "assets/turntables/rom_ENT_resourcecontroller.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 131
+ },
+ "rom_ENT_scout": {
+  "sheet": "assets/turntables/rom_ENT_scout.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 126
+ },
+ "rom_ENT_shipyard": {
+  "sheet": "assets/turntables/rom_ENT_shipyard.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 143
+ },
+ "rom_ENT_trehu": {
+  "sheet": "assets/turntables/rom_ENT_trehu.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 133
+ },
+ "rom_TMP_birdofprey": {
+  "sheet": "assets/turntables/rom_TMP_birdofprey.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 119
+ },
+ "rom_TMP_bomber": {
+  "sheet": "assets/turntables/rom_TMP_bomber.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 133
+ },
+ "rom_TMP_constructor": {
+  "sheet": "assets/turntables/rom_TMP_constructor.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 194
+ },
+ "rom_TMP_draconarius": {
+  "sheet": "assets/turntables/rom_TMP_draconarius.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 155
+ },
+ "rom_TMP_dtalla": {
+  "sheet": "assets/turntables/rom_TMP_dtalla.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 165
+ },
+ "rom_TMP_fighter": {
+  "sheet": "assets/turntables/rom_TMP_fighter.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 116
+ },
+ "rom_TMP_firehawk": {
+  "sheet": "assets/turntables/rom_TMP_firehawk.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 131
+ },
+ "rom_TMP_nova": {
+  "sheet": "assets/turntables/rom_TMP_nova.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 111
+ },
+ "rom_TMP_outpost": {
+  "sheet": "assets/turntables/rom_TMP_outpost.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 151
+ },
+ "rom_TMP_resourcecollector": {
+  "sheet": "assets/turntables/rom_TMP_resourcecollector.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 194
+ },
+ "rom_TMP_resourcecontroller": {
+  "sheet": "assets/turntables/rom_TMP_resourcecontroller.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 137
+ },
+ "rom_TMP_shipyard_S": {
+  "sheet": "assets/turntables/rom_TMP_shipyard_S.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 180
+ },
+ "rom_TMP_starglider": {
+  "sheet": "assets/turntables/rom_TMP_starglider.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 150
+ },
+ "rom_TMP_stormbird": {
+  "sheet": "assets/turntables/rom_TMP_stormbird.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 141
+ },
+ "rom_TMP_vengance": {
+  "sheet": "assets/turntables/rom_TMP_vengance.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 152
+ },
+ "rom_TMP_whitewind": {
+  "sheet": "assets/turntables/rom_TMP_whitewind.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 125
+ },
+ "rom_TNG_CIV_orbitaloffices": {
+  "sheet": "assets/turntables/rom_TNG_CIV_orbitaloffices.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 173
+ },
+ "rom_TNG_CIV_researchstation": {
+  "sheet": "assets/turntables/rom_TNG_CIV_researchstation.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 114
+ },
+ "rom_TNG_CIV_tradingstation": {
+  "sheet": "assets/turntables/rom_TNG_CIV_tradingstation.webp",
+  "frames": 18,
+  "columns": 5,
+  "frameWidth": 256,
+  "frameHeight": 233
+ },
+ "rom_TNG_bomber": {
+  "sheet": "assets/turntables/rom_TNG_bomber.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 170
+ },
+ "rom_TNG_constructionship": {
+  "sheet": "assets/turntables/rom_TNG_constructionship.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 125
+ },
+ "rom_TNG_constructor1": {
+  "sheet": "assets/turntables/rom_TNG_constructor1.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 194
+ },
+ "rom_TNG_dderidex": {
+  "sheet": "assets/turntables/rom_TNG_dderidex.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 154
+ },
+ "rom_TNG_fighter": {
+  "sheet": "assets/turntables/rom_TNG_fighter.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 177
+ },
+ "rom_TNG_griffin": {
+  "sheet": "assets/turntables/rom_TNG_griffin.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 125
+ },
+ "rom_TNG_norexan": {
+  "sheet": "assets/turntables/rom_TNG_norexan.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 130
+ },
+ "rom_TNG_nova": {
+  "sheet": "assets/turntables/rom_TNG_nova.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 166
+ },
+ "rom_TNG_outpost": {
+  "sheet": "assets/turntables/rom_TNG_outpost.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 153
+ },
+ "rom_TNG_phoenix": {
+  "sheet": "assets/turntables/rom_TNG_phoenix.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 134
+ },
+ "rom_TNG_probe": {
+  "sheet": "assets/turntables/rom_TNG_probe.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 176
+ },
+ "rom_TNG_pulseturret": {
+  "sheet": "assets/turntables/rom_TNG_pulseturret.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 182
+ },
+ "rom_TNG_raptor": {
+  "sheet": "assets/turntables/rom_TNG_raptor.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 138
+ },
+ "rom_TNG_repairship": {
+  "sheet": "assets/turntables/rom_TNG_repairship.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 137
+ },
+ "rom_TNG_resourcecollector": {
+  "sheet": "assets/turntables/rom_TNG_resourcecollector.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 152
+ },
+ "rom_TNG_resourcecontroller": {
+  "sheet": "assets/turntables/rom_TNG_resourcecontroller.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 110
+ },
+ "rom_TNG_shipyard": {
+  "sheet": "assets/turntables/rom_TNG_shipyard.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 167
+ },
+ "rom_TNG_shipyard_D": {
+  "sheet": "assets/turntables/rom_TNG_shipyard_D.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 154
+ },
+ "rom_TNG_shipyard_S": {
+  "sheet": "assets/turntables/rom_TNG_shipyard_S.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 159
+ },
+ "rom_TNG_shrike": {
+  "sheet": "assets/turntables/rom_TNG_shrike.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 134
+ },
+ "rom_TNG_starbase": {
+  "sheet": "assets/turntables/rom_TNG_starbase.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 151
+ },
+ "rom_TNG_talon": {
+  "sheet": "assets/turntables/rom_TNG_talon.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 128
+ },
+ "rom_TNG_torpedoturret": {
+  "sheet": "assets/turntables/rom_TNG_torpedoturret.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 186
+ },
+ "rom_TNG_tvaro": {
+  "sheet": "assets/turntables/rom_TNG_tvaro.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 118
+ },
+ "rom_TNG_veles": {
+  "sheet": "assets/turntables/rom_TNG_veles.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 136
+ },
+ "rom_TOS_battlehawk": {
+  "sheet": "assets/turntables/rom_TOS_battlehawk.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 124
+ },
+ "rom_TOS_birdofprey": {
+  "sheet": "assets/turntables/rom_TOS_birdofprey.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 139
+ },
+ "rom_TOS_constructor": {
+  "sheet": "assets/turntables/rom_TOS_constructor.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 194
+ },
+ "rom_TOS_d7": {
+  "sheet": "assets/turntables/rom_TOS_d7.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 145
+ },
+ "rom_TOS_fighter": {
+  "sheet": "assets/turntables/rom_TOS_fighter.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 120
+ },
+ "rom_TOS_hathos": {
+  "sheet": "assets/turntables/rom_TOS_hathos.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 139
+ },
+ "rom_TOS_mularr": {
+  "sheet": "assets/turntables/rom_TOS_mularr.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 107
+ },
+ "rom_TOS_outpost": {
+  "sheet": "assets/turntables/rom_TOS_outpost.webp",
+  "frames": 18,
+  "columns": 5,
+  "frameWidth": 226,
+  "frameHeight": 214
+ },
+ "rom_TOS_praetor": {
+  "sheet": "assets/turntables/rom_TOS_praetor.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 122
+ },
+ "rom_TOS_resourcecollector": {
+  "sheet": "assets/turntables/rom_TOS_resourcecollector.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 194
+ },
+ "rom_TOS_resourcecontroller": {
+  "sheet": "assets/turntables/rom_TOS_resourcecontroller.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 116
+ },
+ "rom_TOS_sehin": {
+  "sheet": "assets/turntables/rom_TOS_sehin.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 121
+ },
+ "rom_TOS_shipyard_S": {
+  "sheet": "assets/turntables/rom_TOS_shipyard_S.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 130
+ },
+ "rom_TOS_stenvastam": {
+  "sheet": "assets/turntables/rom_TOS_stenvastam.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 104
+ },
+ "thl_ENT_webspinner": {
+  "sheet": "assets/turntables/thl_ENT_webspinner.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 139
+ },
+ "und_TNG_nicor": {
+  "sheet": "assets/turntables/und_TNG_nicor.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 155
+ },
+ "vth_TNG_bastille": {
+  "sheet": "assets/turntables/vth_TNG_bastille.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 149
+ },
+ "vth_TNG_bastion": {
+  "sheet": "assets/turntables/vth_TNG_bastion.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 150
+ },
+ "vth_TNG_bulwark": {
+  "sheet": "assets/turntables/vth_TNG_bulwark.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 198
+ },
+ "vth_TNG_citadel": {
+  "sheet": "assets/turntables/vth_TNG_citadel.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 106
+ },
+ "vth_TNG_fighter": {
+  "sheet": "assets/turntables/vth_TNG_fighter.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 176
+ },
+ "vth_TNG_palisade": {
+  "sheet": "assets/turntables/vth_TNG_palisade.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 137
+ },
+ "vth_TNG_rampart": {
+  "sheet": "assets/turntables/vth_TNG_rampart.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 169
+ },
+ "vth_TNG_stronghold": {
+  "sheet": "assets/turntables/vth_TNG_stronghold.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 193
+ },
+ "vth_TNG_ward": {
+  "sheet": "assets/turntables/vth_TNG_ward.webp",
+  "frames": 18,
+  "columns": 3,
+  "frameWidth": 256,
+  "frameHeight": 123
+ },
+ "zzz_TNG_crystallineentity": {
+  "sheet": "assets/turntables/zzz_TNG_crystallineentity.webp",
+  "frames": 18,
+  "columns": 5,
+  "frameWidth": 234,
+  "frameHeight": 220
+ },
+ "zzz_TOS_planetkiller": {
+  "sheet": "assets/turntables/zzz_TOS_planetkiller.webp",
+  "frames": 18,
+  "columns": 4,
+  "frameWidth": 256,
+  "frameHeight": 152
+ }
+}

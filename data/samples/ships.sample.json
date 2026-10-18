@@ -1,0 +1,962 @@
+{
+  "schemaVersion": 1,
+  "dataVersion": {
+    "modRevision": 4014,
+    "generatedAt": "2026-10-17T00:00:00Z",
+    "generator": "hand-filled sample (#407)"
+  },
+  "eras": [
+    {
+      "id": "ENT",
+      "title": "Enterprise",
+      "year": 2160,
+      "modFolder": "STC - 2160"
+    },
+    {
+      "id": "TOS",
+      "title": "The Original Series",
+      "year": 2250,
+      "modFolder": "STC - 2250"
+    },
+    {
+      "id": "TMP",
+      "title": "The Motion Pictures",
+      "year": 2310,
+      "modFolder": "STC - 2310"
+    },
+    {
+      "id": "TNG",
+      "title": "The Next Generation",
+      "year": 2380,
+      "modFolder": "STC - 2380"
+    }
+  ],
+  "factions": [
+    {
+      "id": "federation",
+      "name": "Federation",
+      "prefixes": [
+        "fed"
+      ],
+      "playable": true,
+      "eras": [
+        "ENT",
+        "TOS",
+        "TMP",
+        "TNG"
+      ]
+    },
+    {
+      "id": "klingon",
+      "name": "Klingon Empire",
+      "prefixes": [
+        "kng"
+      ],
+      "playable": true,
+      "eras": [
+        "ENT",
+        "TOS",
+        "TMP",
+        "TNG"
+      ]
+    },
+    {
+      "id": "unaligned",
+      "name": "Unaligned",
+      "prefixes": [
+        "zzz"
+      ],
+      "playable": false,
+      "eras": [
+        "TNG"
+      ]
+    }
+  ],
+  "ships": [
+    {
+      "id": "fed_ENT_nx",
+      "era": "ENT",
+      "faction": "federation",
+      "name": "NX",
+      "subtitle": "Heavy Explorer",
+      "availability": [
+        "buildable"
+      ],
+      "classification": {
+        "displayFamily": "Capital",
+        "buildFamily": "SuperCap_ENT_Fed",
+        "unitCapsFamily": "ExperimentalCapital",
+        "sizeCategory": "Small"
+      },
+      "stats": {
+        "maxHealth": 10800,
+        "maxSpeed": 169,
+        "buildCost": 2400,
+        "buildTime": 62,
+        "length": 225,
+        "width": 130
+      },
+      "roles": [
+        "Support",
+        "AntiFrigate",
+        "AntiCapital"
+      ],
+      "weapons": {
+        "total": 8,
+        "beam": 6,
+        "pulse": 0,
+        "torpedo": 2,
+        "other": 0,
+        "mounts": [
+          {
+            "weapon": "fed_ENT_phaser_Mk02",
+            "hardpoint": "Weapon_Phaser1"
+          },
+          {
+            "weapon": "fed_ENT_phaser_Mk02",
+            "hardpoint": "Weapon_Phaser2"
+          },
+          {
+            "weapon": "fed_ENT_phaser_Mk02",
+            "hardpoint": "Weapon_Phaser3"
+          },
+          {
+            "weapon": "fed_ENT_phaser_Mk02",
+            "hardpoint": "Weapon_Phaser4"
+          },
+          {
+            "weapon": "fed_ENT_phaser_Mk02",
+            "hardpoint": "Weapon_Phaser5"
+          },
+          {
+            "weapon": "fed_ENT_phaser_Mk02",
+            "hardpoint": "Weapon_Phaser6"
+          },
+          {
+            "weapon": "fed_ENT_torpedo_spatial_Mk08",
+            "hardpoint": "Weapon_Missile1"
+          },
+          {
+            "weapon": "fed_ENT_torpedo_spatial_Mk08",
+            "hardpoint": "Weapon_Missile3"
+          }
+        ],
+        "details": [
+          {
+            "name": "Phaser Beams Mk 2",
+            "kind": "beam",
+            "damage": 359,
+            "cycle": 7.0,
+            "shotsPerCycle": 1,
+            "dps": 51.3,
+            "range": 6500,
+            "special": false,
+            "disables": false,
+            "area": false,
+            "count": 6
+          },
+          {
+            "name": "Spatial Torpedoes Mk 8",
+            "kind": "torpedo",
+            "damage": 1077,
+            "cycle": 15.0,
+            "shotsPerCycle": 1,
+            "dps": 71.8,
+            "range": 15000,
+            "special": false,
+            "disables": false,
+            "area": false,
+            "count": 2
+          }
+        ],
+        "dps": 451.4
+      },
+      "abilities": [
+        {
+          "id": "CanBeCaptured",
+          "name": "Capturable"
+        },
+        {
+          "id": "CanBeRepaired",
+          "name": "Repairable"
+        },
+        {
+          "id": "HyperSpaceCommand",
+          "name": "Warp"
+        },
+        {
+          "id": "CanBuildShips",
+          "name": "Builds subsystem modules"
+        }
+      ],
+      "description": {
+        "lead": "Heavy Explorer",
+        "crew": 82,
+        "armament": [
+          "Phase Cannons",
+          "Spatial Torpedoes"
+        ],
+        "defences": [
+          "Hull Plating"
+        ],
+        "prerequisites": [
+          "Capital Sized Chassis"
+        ],
+        "summary": "The culmination of Henry Archer's dream and first Earth ship to make warp 5, serving as the most powerful ship in the fleet, albeit with the same weaknesses: no shields."
+      },
+      "research": {
+        "expression": "Fed_ENT_EarthCapitalTech | Fed_ENT_EarthCapitalTech_F",
+        "anyOf": [
+          {
+            "id": "Fed_ENT_EarthCapitalTech",
+            "name": "Capital Sized Chassis"
+          },
+          {
+            "id": "Fed_ENT_EarthCapitalTech_F",
+            "name": "Capital Sized Reinforcements"
+          }
+        ]
+      },
+      "canon": {
+        "tier": "A",
+        "url": "https://memory-alpha.fandom.com/wiki/NX_class",
+        "note": null
+      },
+      "credits": {
+        "authors": [],
+        "note": "No readme in the source folder."
+      },
+      "media": {
+        "icon": "assets/icons/ENT/fed_ENT_nx.webp",
+        "turntable": null
+      },
+      "variants": [],
+      "source": {
+        "ship": "STC - 2160/ship/fed_ENT_nx/fed_ENT_nx.ship",
+        "def": "STC - 2160/ship/fed_ENT_nx/fed_ENT_nx.def",
+        "build": "STC - 2160/scripts/races/federation/scripts/build/ENT_build.lua"
+      }
+    },
+    {
+      "id": "kng_TOS_d7",
+      "era": "TOS",
+      "faction": "klingon",
+      "name": "D7",
+      "subtitle": "Battlecruiser",
+      "availability": [
+        "buildable"
+      ],
+      "classification": {
+        "displayFamily": "Frigate",
+        "buildFamily": "Frigate_TOS_Kng",
+        "unitCapsFamily": "Frigate",
+        "sizeCategory": "Small"
+      },
+      "stats": {
+        "maxHealth": 11800,
+        "maxSpeed": 265.1,
+        "buildCost": 1200,
+        "buildTime": 30,
+        "length": 228,
+        "width": 165
+      },
+      "roles": [
+        "AntiFighter",
+        "AntiFrigate",
+        "AntiCapital"
+      ],
+      "weapons": {
+        "total": 7,
+        "beam": 0,
+        "pulse": 6,
+        "torpedo": 1,
+        "other": 0,
+        "mounts": [
+          {
+            "weapon": "kng_TOS_pulse_Mk06_strafe",
+            "hardpoint": "Weapon_Pulse1"
+          },
+          {
+            "weapon": "kng_TOS_pulse_Mk06_strafe",
+            "hardpoint": "Weapon_Pulse2"
+          },
+          {
+            "weapon": "kng_TOS_pulse_Mk05_strafe",
+            "hardpoint": "Weapon_Pulse3"
+          },
+          {
+            "weapon": "kng_TOS_pulse_Mk05_strafe",
+            "hardpoint": "Weapon_Pulse4"
+          },
+          {
+            "weapon": "kng_TOS_pulse_Mk05_strafe",
+            "hardpoint": "Weapon_Pulse5"
+          },
+          {
+            "weapon": "kng_TOS_pulse_Mk05_strafe",
+            "hardpoint": "Weapon_Pulse6"
+          },
+          {
+            "weapon": "kng_TOS_torpedo_Mk03_combat",
+            "hardpoint": "Weapon_Torpedo1"
+          }
+        ],
+        "details": [
+          {
+            "name": "Disruptor Pulses Mk 6",
+            "kind": "pulse",
+            "damage": 47,
+            "cycle": 10.0,
+            "shotsPerCycle": 4,
+            "dps": 18.8,
+            "range": 10000,
+            "special": false,
+            "disables": false,
+            "area": false,
+            "count": 2
+          },
+          {
+            "name": "Disruptor Pulses Mk 5",
+            "kind": "pulse",
+            "damage": 30,
+            "cycle": 7.0,
+            "shotsPerCycle": 4,
+            "dps": 17.4,
+            "range": 8000,
+            "special": false,
+            "disables": false,
+            "area": false,
+            "count": 4
+          },
+          {
+            "name": "Torpedoes Mk 3",
+            "kind": "torpedo",
+            "damage": 1184,
+            "cycle": 15.0,
+            "shotsPerCycle": 1,
+            "dps": 79.0,
+            "range": 6000,
+            "special": false,
+            "disables": false,
+            "area": false,
+            "count": 1
+          }
+        ],
+        "dps": 186.2
+      },
+      "abilities": [
+        {
+          "id": "HyperSpaceCommand",
+          "name": "Warp"
+        },
+        {
+          "id": "CloakAbility",
+          "name": "Cloak"
+        },
+        {
+          "id": "CanBeCaptured",
+          "name": "Capturable"
+        },
+        {
+          "id": "CanBeRepaired",
+          "name": "Repairable"
+        }
+      ],
+      "description": {
+        "lead": "Medium Battlecruiser",
+        "crew": 380,
+        "armament": [
+          "Disruptor Cannons",
+          "Torpedoes"
+        ],
+        "defences": [
+          "Energy Shields"
+        ],
+        "prerequisites": [
+          "Destroyer Sized Chassis"
+        ],
+        "summary": "Descendant of the D4 battlecruiser, the D7 is the ultimate expression of Klingon might. While not the largest ship in the fleet, it is the most sought after!"
+      },
+      "research": {
+        "expression": "Kng_TOS_FrigateTech | Kng_TOS_FrigateTech_F",
+        "anyOf": [
+          {
+            "id": "Kng_TOS_FrigateTech",
+            "name": "Cruiser Sized Chassis"
+          },
+          {
+            "id": "Kng_TOS_FrigateTech_F",
+            "name": "Cruiser Reinforcements"
+          }
+        ]
+      },
+      "canon": {
+        "tier": "A",
+        "url": "https://memory-alpha.fandom.com/wiki/D7_class",
+        "note": "Canon role is battlecruiser."
+      },
+      "credits": {
+        "authors": [],
+        "note": "No readme in the source folder."
+      },
+      "media": {
+        "icon": "assets/icons/TOS/kng_TOS_d7.webp",
+        "turntable": null
+      },
+      "variants": [],
+      "source": {
+        "ship": "STC - 2250/ship/kng_TOS_d7/kng_TOS_d7.ship",
+        "def": "STC - 2250/ship/kng_TOS_d7/kng_TOS_d7.def",
+        "build": "STC - 2250/scripts/races/klingon/scripts/build/TOS_build.lua"
+      }
+    },
+    {
+      "id": "fed_TMP_oberth",
+      "era": "TMP",
+      "faction": "federation",
+      "name": "Oberth",
+      "subtitle": "Light Science Vessel",
+      "availability": [
+        "buildable",
+        "starting-fleet"
+      ],
+      "classification": {
+        "displayFamily": "Corvette",
+        "buildFamily": "Corvette_TMP_Fed",
+        "unitCapsFamily": "Corvette",
+        "sizeCategory": "Small"
+      },
+      "stats": {
+        "maxHealth": 4300,
+        "maxSpeed": 265,
+        "buildCost": 2400,
+        "buildTime": 62,
+        "length": 150,
+        "width": 78
+      },
+      "roles": [
+        "Support",
+        "AntiFrigate",
+        "AntiCapital"
+      ],
+      "weapons": {
+        "total": 9,
+        "beam": 2,
+        "pulse": 4,
+        "torpedo": 2,
+        "other": 1,
+        "mounts": [
+          {
+            "weapon": "fed_TMP_phaser_Mk08",
+            "hardpoint": "Weapon_Phaser_V1"
+          },
+          {
+            "weapon": "fed_TMP_phaser_Mk08",
+            "hardpoint": "Weapon_Phaser_V2"
+          },
+          {
+            "weapon": "fed_TMP_torpedo_photon_Mk04_combat",
+            "hardpoint": "Weapon_TorpedoFore"
+          },
+          {
+            "weapon": "fed_TMP_torpedo_photon_Mk04_combat",
+            "hardpoint": "Weapon_TorpedoAft"
+          },
+          {
+            "weapon": "fed_TMP_pulse_phaser_Mk02",
+            "hardpoint": "Weapon_Pulse1"
+          },
+          {
+            "weapon": "fed_TMP_pulse_phaser_Mk02",
+            "hardpoint": "Weapon_Pulse2"
+          },
+          {
+            "weapon": "fed_TMP_pulse_phaser_Mk02",
+            "hardpoint": "Weapon_Pulse3"
+          },
+          {
+            "weapon": "fed_TMP_pulse_phaser_Mk02",
+            "hardpoint": "Weapon_Pulse4"
+          },
+          {
+            "weapon": "fed_TNG_repairgunheal",
+            "hardpoint": "Weapon_Repair"
+          }
+        ],
+        "details": [
+          {
+            "name": "Phaser Beams Mk 8",
+            "kind": "beam",
+            "damage": 208,
+            "cycle": 5.0,
+            "shotsPerCycle": 1,
+            "dps": 41.6,
+            "range": 5500,
+            "special": false,
+            "disables": false,
+            "area": false,
+            "count": 2
+          },
+          {
+            "name": "Photon Torpedoes Mk 4",
+            "kind": "torpedo",
+            "damage": 4472,
+            "cycle": 15.0,
+            "shotsPerCycle": 1,
+            "dps": 298.1,
+            "range": 6500,
+            "special": false,
+            "disables": false,
+            "area": false,
+            "count": 2
+          },
+          {
+            "name": "Pulse Phasers Mk 2",
+            "kind": "pulse",
+            "damage": 346,
+            "cycle": 7.0,
+            "shotsPerCycle": 2,
+            "dps": 98.7,
+            "range": 8000,
+            "special": false,
+            "disables": false,
+            "area": false,
+            "count": 4
+          },
+          {
+            "name": "Repair Beam",
+            "kind": "other",
+            "damage": null,
+            "cycle": 6.0,
+            "shotsPerCycle": 1,
+            "dps": null,
+            "range": 3500,
+            "special": false,
+            "disables": false,
+            "area": false,
+            "count": 1
+          }
+        ],
+        "dps": 1074.2
+      },
+      "abilities": [
+        {
+          "id": "HyperSpaceCommand",
+          "name": "Warp"
+        },
+        {
+          "id": "SensorPing",
+          "name": "Sensor ping"
+        },
+        {
+          "id": "CanBeCaptured",
+          "name": "Capturable"
+        },
+        {
+          "id": "CanBeRepaired",
+          "name": "Repairable"
+        },
+        {
+          "id": "CanBuildShips",
+          "name": "Builds subsystem modules"
+        },
+        {
+          "id": "RepairCommand",
+          "name": "Repairs ships"
+        }
+      ],
+      "description": {
+        "lead": "Light Science Vessel",
+        "crew": 80,
+        "armament": [
+          "Phasers"
+        ],
+        "defences": [
+          "Energy Shields"
+        ],
+        "prerequisites": [
+          "Destroyer Sized Chassis"
+        ],
+        "summary": "Scout ship designed at the dawn of the 23rd Century, but heavily refit for modern use.\nCan be fit with a sensor pod, combat pod or support module."
+      },
+      "research": {
+        "expression": "FED_TMP_CorvetteTech | Fed_TMP_CorvetteTech_F",
+        "anyOf": [
+          {
+            "id": "FED_TMP_CorvetteTech",
+            "name": "Destroyer Sized Chassis"
+          },
+          {
+            "id": "Fed_TMP_CorvetteTech_F",
+            "name": "Destroyer Reinforcements"
+          }
+        ]
+      },
+      "canon": {
+        "tier": "A",
+        "url": "https://memory-alpha.fandom.com/wiki/Oberth_class",
+        "note": null
+      },
+      "credits": {
+        "authors": [],
+        "note": "No readme in the source folder."
+      },
+      "media": {
+        "icon": "assets/icons/TMP/fed_TMP_oberth.webp",
+        "turntable": null
+      },
+      "variants": [
+        {
+          "id": "sensor-suite",
+          "label": "Sensor Suite",
+          "kind": "subsystem",
+          "hullId": null,
+          "subsystemId": "fed_TMP_oberth_sensorsuite",
+          "description": null,
+          "stats": null,
+          "media": null
+        },
+        {
+          "id": "rollbar",
+          "label": "Rollbar",
+          "kind": "subsystem",
+          "hullId": null,
+          "subsystemId": "fed_TMP_oberth_rollbar",
+          "description": null,
+          "stats": null,
+          "media": null
+        },
+        {
+          "id": "support-suite",
+          "label": "Support Suite",
+          "kind": "subsystem",
+          "hullId": null,
+          "subsystemId": "fed_TMP_oberth_medical",
+          "description": "Allows the Oberth to support other ships on the battlefield. Enhancement: shield repair beam.",
+          "stats": null,
+          "media": null
+        }
+      ],
+      "source": {
+        "ship": "STC - 2310/ship/fed_TMP_oberth/fed_TMP_oberth.ship",
+        "def": "STC - 2310/ship/fed_TMP_oberth/fed_TMP_oberth.def",
+        "build": "STC - 2310/scripts/races/federation/scripts/build/TMP_build.lua"
+      }
+    },
+    {
+      "id": "fed_TNG_galaxy",
+      "era": "TNG",
+      "faction": "federation",
+      "name": "Galaxy",
+      "subtitle": "Heavy Explorer",
+      "availability": [
+        "buildable"
+      ],
+      "classification": {
+        "displayFamily": "Capital",
+        "buildFamily": "SuperCap_TNG_Fed",
+        "unitCapsFamily": "Capital",
+        "sizeCategory": "Capital"
+      },
+      "stats": {
+        "maxHealth": 111700,
+        "maxSpeed": 163,
+        "buildCost": 9200,
+        "buildTime": 239,
+        "length": 652,
+        "width": 464
+      },
+      "roles": [
+        "AntiFrigate",
+        "AntiCapital"
+      ],
+      "weapons": {
+        "total": 8,
+        "beam": 6,
+        "pulse": 0,
+        "torpedo": 2,
+        "other": 0,
+        "mounts": [
+          {
+            "weapon": "fed_TNG_phaser_Mk11_galaxy_v1",
+            "hardpoint": "Weapon_Phaser_v1"
+          },
+          {
+            "weapon": "fed_TNG_phaser_Mk11_galaxy_v2",
+            "hardpoint": "Weapon_Phaser_v2"
+          },
+          {
+            "weapon": "fed_TNG_phaser_Mk11_galaxy_v2",
+            "hardpoint": "Weapon_Phaser_v3"
+          },
+          {
+            "weapon": "fed_TNG_phaser_Mk11_galaxy_d1",
+            "hardpoint": "Weapon_Phaser_d1"
+          },
+          {
+            "weapon": "fed_TNG_phaser_Mk11_galaxy_d2",
+            "hardpoint": "Weapon_Phaser_d2"
+          },
+          {
+            "weapon": "fed_TNG_phaser_Mk11_galaxy_d2",
+            "hardpoint": "Weapon_Phaser_d3"
+          },
+          {
+            "weapon": "fed_TNG_torpedo_photon_Mk06",
+            "hardpoint": "Weapon_Torpedo_f"
+          },
+          {
+            "weapon": "fed_TNG_torpedo_photon_Mk06",
+            "hardpoint": "Weapon_Torpedo_a"
+          }
+        ],
+        "details": [
+          {
+            "name": "Phaser Beams Mk 11",
+            "kind": "beam",
+            "damage": 676,
+            "cycle": 5.0,
+            "shotsPerCycle": 1,
+            "dps": 135.1,
+            "range": 5500,
+            "special": false,
+            "disables": false,
+            "area": false,
+            "count": 6
+          },
+          {
+            "name": "Photon Torpedoes Mk 6",
+            "kind": "torpedo",
+            "damage": 1046,
+            "cycle": 15.0,
+            "shotsPerCycle": 1,
+            "dps": 69.7,
+            "range": 15000,
+            "special": false,
+            "disables": false,
+            "area": false,
+            "count": 2
+          }
+        ],
+        "dps": 950.0
+      },
+      "abilities": [
+        {
+          "id": "ShipHold",
+          "name": "Hangar"
+        },
+        {
+          "id": "CanBeCaptured",
+          "name": "Capturable"
+        },
+        {
+          "id": "HyperSpaceCommand",
+          "name": "Warp"
+        },
+        {
+          "id": "CanBeRepaired",
+          "name": "Repairable"
+        },
+        {
+          "id": "CustomCommand",
+          "name": "Separation",
+          "detail": "Splits into its separate sections."
+        }
+      ],
+      "description": {
+        "lead": "Heavy Explorer",
+        "crew": 1200,
+        "armament": [
+          "Phaser Arrays",
+          "Photon Torpedoes"
+        ],
+        "defences": [
+          "Energy Shields"
+        ],
+        "prerequisites": [
+          "Capital Sized Chassis"
+        ],
+        "summary": "Intended to be the new face of Starfleet's exploritory efforts for the next century, the Galaxy-Class has been pressed into combat as the new standard capital ship for Starfleet's battle groups.\nCapable of seperating its saucer in emergency situations."
+      },
+      "research": {
+        "expression": "Fed_TNG_CapitalTech | Fed_TNG_CapitalTech_F",
+        "anyOf": [
+          {
+            "id": "Fed_TNG_CapitalTech",
+            "name": "Capital Sized Chassis"
+          },
+          {
+            "id": "Fed_TNG_CapitalTech_F",
+            "name": "Capital Sized Reinforcements"
+          }
+        ]
+      },
+      "canon": {
+        "tier": "A",
+        "url": "https://memory-alpha.fandom.com/wiki/Galaxy_class",
+        "note": null
+      },
+      "credits": {
+        "authors": [],
+        "note": "The readme doesn't name the modeller (\"All meshes, textures, etc are by me\"). It thanks Wrath of Achilles and Major A Payne for tutorials, Captain Maxwell for ship names, and icewolf132 for the original saucer-separation files."
+      },
+      "media": {
+        "icon": "assets/icons/TNG/fed_TNG_galaxy.webp",
+        "turntable": null
+      },
+      "variants": [
+        {
+          "id": "saucer",
+          "label": "Saucer",
+          "kind": "separation",
+          "hullId": "fed_TNG_galaxy_saucer",
+          "subsystemId": null,
+          "description": null,
+          "stats": {
+            "maxHealth": 65100,
+            "maxSpeed": 203,
+            "buildCost": 5700,
+            "length": 466,
+            "width": 378
+          },
+          "media": {
+            "icon": "icons/fed_TNG_galaxy_saucer.webp",
+            "turntable": null
+          }
+        },
+        {
+          "id": "stardrive",
+          "label": "Stardrive",
+          "kind": "separation",
+          "hullId": "fed_TNG_galaxy_stardrive",
+          "subsystemId": null,
+          "description": null,
+          "stats": {
+            "maxHealth": 45400,
+            "maxSpeed": 241,
+            "buildCost": 6830,
+            "length": 401,
+            "width": 307
+          },
+          "media": {
+            "icon": "icons/fed_TNG_galaxy_stardrive.webp",
+            "turntable": null
+          }
+        }
+      ],
+      "source": {
+        "ship": "STC - 2380/ship/fed_TNG_galaxy/fed_TNG_galaxy.ship",
+        "def": "STC - 2380/ship/fed_TNG_galaxy/fed_TNG_galaxy.def",
+        "build": "STC - 2380/scripts/races/federation/scripts/build/TNG_build.lua"
+      }
+    },
+    {
+      "id": "zzz_TNG_crystallineentity",
+      "era": "TNG",
+      "faction": "unaligned",
+      "name": "Crystalline Entity",
+      "subtitle": "Cozmazoan",
+      "availability": [
+        "keeper"
+      ],
+      "classification": {
+        "displayFamily": "Corvette",
+        "buildFamily": "Corvette_TNG_Fed",
+        "unitCapsFamily": "Corvette",
+        "sizeCategory": "Tiny"
+      },
+      "stats": {
+        "maxHealth": 569000,
+        "maxSpeed": 233,
+        "buildCost": 5500,
+        "buildTime": 282,
+        "length": null,
+        "width": null
+      },
+      "roles": [
+        "AntiFrigate",
+        "AntiCapital"
+      ],
+      "weapons": {
+        "total": 4,
+        "beam": 4,
+        "pulse": 0,
+        "torpedo": 0,
+        "other": 0,
+        "mounts": [
+          {
+            "weapon": "crystallinebeam",
+            "hardpoint": "Weapon_Fore"
+          },
+          {
+            "weapon": "crystallinebeam",
+            "hardpoint": "Weapon_Aft"
+          },
+          {
+            "weapon": "crystallinebeam",
+            "hardpoint": "Weapon_Port"
+          },
+          {
+            "weapon": "crystallinebeam",
+            "hardpoint": "Weapon_Starboard"
+          }
+        ],
+        "details": [
+          {
+            "name": "Crystalline Beam",
+            "kind": "beam",
+            "damage": 1450,
+            "cycle": 10.0,
+            "shotsPerCycle": 1,
+            "dps": 145.0,
+            "range": 7500,
+            "special": false,
+            "disables": false,
+            "area": false,
+            "count": 4
+          }
+        ],
+        "dps": 580.0
+      },
+      "abilities": [
+        {
+          "id": "HyperSpaceCommand",
+          "name": "Warp"
+        },
+        {
+          "id": "CanBeCaptured",
+          "name": "Capturable"
+        },
+        {
+          "id": "CanBeRepaired",
+          "name": "Repairable"
+        },
+        {
+          "id": "CloakAbility",
+          "name": "Cloak"
+        }
+      ],
+      "description": null,
+      "research": null,
+      "canon": {
+        "tier": "A",
+        "url": "https://memory-alpha.fandom.com/wiki/Crystalline_Entity",
+        "note": "Canon calls it a cosmozoan."
+      },
+      "credits": {
+        "authors": [],
+        "note": "No readme in the source folder."
+      },
+      "media": {
+        "icon": null,
+        "turntable": null
+      },
+      "variants": [],
+      "source": {
+        "ship": "STC - 2380/ship/zzz_TNG_crystallineentity/zzz_TNG_crystallineentity.ship",
+        "def": "STC - 2380/ship/zzz_TNG_crystallineentity/zzz_TNG_crystallineentity.def",
+        "build": null
+      }
+    }
+  ]
+}

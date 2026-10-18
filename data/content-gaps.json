@@ -1,0 +1,389 @@
+{
+ "entries": 370,
+ "complete": 350,
+ "byField": {
+  "crew": 20
+ },
+ "ships": [
+  {
+   "era": "ENT",
+   "id": "fed_ENT_discovery",
+   "name": "Discovery",
+   "faction": "federation",
+   "availability": [
+    "special"
+   ],
+   "gaps": [
+    "crew"
+   ],
+   "dexWritten": [
+    "lead",
+    "armament",
+    "defences",
+    "prerequisites",
+    "summary"
+   ]
+  },
+  {
+   "era": "ENT",
+   "id": "fed_ENT_minuteman",
+   "name": "Minuteman",
+   "faction": "federation",
+   "availability": [
+    "special"
+   ],
+   "gaps": [
+    "crew"
+   ],
+   "dexWritten": [
+    "lead",
+    "armament",
+    "defences",
+    "prerequisites",
+    "summary"
+   ]
+  },
+  {
+   "era": "ENT",
+   "id": "fed_ENT_poseidon",
+   "name": "Poseidon",
+   "faction": "federation",
+   "availability": [
+    "special"
+   ],
+   "gaps": [
+    "crew"
+   ],
+   "dexWritten": [
+    "lead",
+    "armament",
+    "defences",
+    "prerequisites",
+    "summary"
+   ]
+  },
+  {
+   "era": "ENT",
+   "id": "fed_ENT_yorktown",
+   "name": "Yorktown",
+   "faction": "federation",
+   "availability": [
+    "special"
+   ],
+   "gaps": [
+    "crew"
+   ],
+   "dexWritten": [
+    "lead",
+    "armament",
+    "defences",
+    "prerequisites",
+    "summary"
+   ]
+  },
+  {
+   "era": "ENT",
+   "id": "kng_ENT_flagship",
+   "name": "I.K.S. Qun'Ro",
+   "faction": "klingon",
+   "availability": [
+    "starting-fleet"
+   ],
+   "gaps": [
+    "crew"
+   ],
+   "dexWritten": [
+    "lead",
+    "armament",
+    "defences",
+    "prerequisites",
+    "summary"
+   ]
+  },
+  {
+   "era": "ENT",
+   "id": "rom_ENT_flagship",
+   "name": "I.R.W. Dabhae",
+   "faction": "romulan",
+   "availability": [
+    "starting-fleet"
+   ],
+   "gaps": [
+    "crew"
+   ],
+   "dexWritten": [
+    "lead",
+    "armament",
+    "defences",
+    "prerequisites",
+    "summary"
+   ]
+  },
+  {
+   "era": "ENT",
+   "id": "rom_ENT_jorek",
+   "name": "Jo'rek",
+   "faction": "romulan",
+   "availability": [
+    "special"
+   ],
+   "gaps": [
+    "crew"
+   ],
+   "dexWritten": [
+    "lead",
+    "armament",
+    "defences",
+    "prerequisites",
+    "summary"
+   ]
+  },
+  {
+   "era": "TOS",
+   "id": "fed_TES_flagship",
+   "name": "I.S.S. October Revolution",
+   "faction": "terran",
+   "availability": [
+    "special"
+   ],
+   "gaps": [
+    "crew"
+   ],
+   "dexWritten": [
+    "lead",
+    "armament",
+    "defences",
+    "prerequisites",
+    "summary"
+   ]
+  },
+  {
+   "era": "TOS",
+   "id": "rom_TOS_flagship",
+   "name": "I.R.W. Gal Gath'thong",
+   "faction": "romulan",
+   "availability": [
+    "starting-fleet"
+   ],
+   "gaps": [
+    "crew"
+   ],
+   "dexWritten": [
+    "lead",
+    "armament",
+    "defences",
+    "prerequisites",
+    "summary"
+   ]
+  },
+  {
+   "era": "TMP",
+   "id": "grn_TMP_flagship",
+   "name": "Gornar Prime",
+   "faction": "gorn",
+   "availability": [
+    "starting-fleet"
+   ],
+   "gaps": [
+    "crew"
+   ],
+   "dexWritten": [
+    "lead",
+    "armament",
+    "defences",
+    "prerequisites",
+    "summary"
+   ]
+  },
+  {
+   "era": "TMP",
+   "id": "kng_TMP_flagship",
+   "name": "I.K.S. Tam'Hey",
+   "faction": "klingon",
+   "availability": [
+    "starting-fleet"
+   ],
+   "gaps": [
+    "crew"
+   ],
+   "dexWritten": [
+    "lead",
+    "armament",
+    "defences",
+    "prerequisites",
+    "summary"
+   ]
+  },
+  {
+   "era": "TMP",
+   "id": "rom_TMP_flagship",
+   "name": "I.R.W. Decius",
+   "faction": "romulan",
+   "availability": [
+    "starting-fleet"
+   ],
+   "gaps": [
+    "crew"
+   ],
+   "dexWritten": [
+    "lead",
+    "armament",
+    "defences",
+    "prerequisites",
+    "summary"
+   ]
+  },
+  {
+   "era": "TMP",
+   "id": "rom_TMP_starglider",
+   "name": "Starglider",
+   "faction": "romulan",
+   "availability": [
+    "special"
+   ],
+   "gaps": [
+    "crew"
+   ],
+   "dexWritten": [
+    "lead",
+    "armament",
+    "defences",
+    "prerequisites",
+    "summary"
+   ]
+  },
+  {
+   "era": "TNG",
+   "id": "brg_TNG_flagship",
+   "name": "Flagship",
+   "faction": "borg",
+   "availability": [
+    "starting-fleet"
+   ],
+   "gaps": [
+    "crew"
+   ],
+   "dexWritten": [
+    "lead",
+    "armament",
+    "defences",
+    "prerequisites",
+    "summary"
+   ]
+  },
+  {
+   "era": "TNG",
+   "id": "dom_TNG_flagship",
+   "name": "Flagship",
+   "faction": "dominion",
+   "availability": [
+    "starting-fleet"
+   ],
+   "gaps": [
+    "crew"
+   ],
+   "dexWritten": [
+    "lead",
+    "armament",
+    "defences",
+    "prerequisites",
+    "summary"
+   ]
+  },
+  {
+   "era": "TNG",
+   "id": "fed_TNG_brisbane",
+   "name": "USS Brisbane",
+   "faction": "federation",
+   "availability": [
+    "special"
+   ],
+   "gaps": [
+    "crew"
+   ],
+   "dexWritten": [
+    "lead",
+    "armament",
+    "defences",
+    "prerequisites",
+    "summary"
+   ]
+  },
+  {
+   "era": "TNG",
+   "id": "fed_TNG_premonition",
+   "name": "Premonition",
+   "faction": "federation",
+   "availability": [
+    "starting-fleet"
+   ],
+   "gaps": [
+    "crew"
+   ],
+   "dexWritten": [
+    "lead",
+    "armament",
+    "defences",
+    "prerequisites",
+    "summary"
+   ]
+  },
+  {
+   "era": "TNG",
+   "id": "fed_TNG_typhon",
+   "name": "Typhon",
+   "faction": "federation",
+   "availability": [
+    "starting-fleet"
+   ],
+   "gaps": [
+    "crew"
+   ],
+   "dexWritten": [
+    "lead",
+    "armament",
+    "defences",
+    "prerequisites",
+    "summary"
+   ]
+  },
+  {
+   "era": "TNG",
+   "id": "rom_TNG_flagship",
+   "name": "I.R.W. Valdore",
+   "faction": "romulan",
+   "availability": [
+    "starting-fleet"
+   ],
+   "gaps": [
+    "crew"
+   ],
+   "dexWritten": [
+    "lead",
+    "armament",
+    "defences",
+    "prerequisites",
+    "summary"
+   ]
+  },
+  {
+   "era": "TNG",
+   "id": "vth_TNG_citadel",
+   "name": "Citadel",
+   "faction": "voth",
+   "availability": [
+    "starting-fleet"
+   ],
+   "gaps": [
+    "crew"
+   ],
+   "dexWritten": [
+    "lead",
+    "armament",
+    "defences",
+    "prerequisites",
+    "summary"
+   ]
+  }
+ ]
+}

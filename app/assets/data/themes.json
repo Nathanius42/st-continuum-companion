@@ -1,0 +1,407 @@
+{
+ "eras": {
+  "ENT": {
+   "shape": "panel",
+   "headingFont": "PathwayGothic",
+   "colours": {
+    "background": "#000000",
+    "structure": [
+     "#7899C6",
+     "#C2C6CC",
+     "#455590"
+    ],
+    "textOnStructure": [
+     "#000000",
+     "#000000",
+     "#FFFFFF"
+    ],
+    "data": [
+     "#79C9E4",
+     "#FFE139"
+    ],
+    "accent": "#E36F62",
+    "textOnAccent": "#000000",
+    "highlight": "#FFE139",
+    "textOnBackground": "#FFFFFF",
+    "statusOk": "#99CCFF",
+    "statusWarning": "#FFBB33",
+    "statusAlert": "#FF2200"
+   },
+   "confidence": "fan"
+  },
+  "TOS": {
+   "shape": "console",
+   "headingFont": "TrekClassic",
+   "colours": {
+    "background": "#000000",
+    "structure": [
+     "#F2C520",
+     "#31B67E",
+     "#D81B14"
+    ],
+    "textOnStructure": [
+     "#000000",
+     "#000000",
+     "#FFFFFF"
+    ],
+    "data": [
+     "#F2C520",
+     "#31B67E"
+    ],
+    "accent": "#F04A3E",
+    "textOnAccent": "#000000",
+    "highlight": "#F2C520",
+    "textOnBackground": "#FFFFFF",
+    "statusOk": "#99CCFF",
+    "statusWarning": "#FFBB33",
+    "statusAlert": "#FF2200"
+   },
+   "confidence": "fan"
+  },
+  "TMP": {
+   "shape": "film",
+   "headingFont": "TrekMovie",
+   "colours": {
+    "background": "#000000",
+    "structure": [
+     "#2E86F0",
+     "#5FB4F0",
+     "#1F4FB8"
+    ],
+    "textOnStructure": [
+     "#000000",
+     "#000000",
+     "#FFFFFF"
+    ],
+    "data": [
+     "#5FE08A",
+     "#94FFFF"
+    ],
+    "accent": "#20C050",
+    "textOnAccent": "#000000",
+    "highlight": "#7CC3FB",
+    "textOnBackground": "#FFFFFF",
+    "statusOk": "#99CCFF",
+    "statusWarning": "#FFBB33",
+    "statusAlert": "#FF2200"
+   },
+   "confidence": "fan"
+  },
+  "TNG": {
+   "shape": "lcars",
+   "headingFont": "LeagueGothic",
+   "colours": {
+    "background": "#000000",
+    "structure": [
+     "#EB943A",
+     "#EA9C72",
+     "#FFCC99"
+    ],
+    "textOnStructure": [
+     "#000000",
+     "#000000",
+     "#000000"
+    ],
+    "data": [
+     "#8899FF",
+     "#99CCFF"
+    ],
+    "accent": "#BAA4E5",
+    "textOnAccent": "#000000",
+    "highlight": "#EB943A",
+    "textOnBackground": "#FFFFFF",
+    "statusOk": "#99CCFF",
+    "statusWarning": "#FFBB33",
+    "statusAlert": "#FF2200"
+   },
+   "confidence": "canon"
+  }
+ },
+ "factions": {
+  "terran": {
+   "accent": "#D4AF37",
+   "textOnAccent": "#000000",
+   "confidence": "proposed"
+  },
+  "klingon": {
+   "frame": {
+    "shape": "angular",
+    "headingFont": "KlingonDagger",
+    "colours": {
+     "background": "#000000",
+     "structure": [
+      "#F05A28",
+      "#EB670E",
+      "#8D303B"
+     ],
+     "textOnStructure": [
+      "#000000",
+      "#000000",
+      "#FFFFFF"
+     ],
+     "data": [
+      "#F3AF26",
+      "#FB6116"
+     ],
+     "accent": "#F3AF26",
+     "textOnAccent": "#000000",
+     "highlight": "#FB6116",
+     "textOnBackground": "#FFFFFF",
+     "statusOk": "#99CCFF",
+     "statusWarning": "#FFBB33",
+     "statusAlert": "#FF2200"
+    },
+    "confidence": "fan"
+   },
+   "scriptFont": "KlingonGlyphs",
+   "confidence": "fan"
+  },
+  "romulan": {
+   "frame": {
+    "shape": "slanted",
+    "headingFont": "RomulanEagle",
+    "colours": {
+     "background": "#000000",
+     "structure": [
+      "#20C8D0",
+      "#23A76E",
+      "#1F4FC0"
+     ],
+     "textOnStructure": [
+      "#000000",
+      "#000000",
+      "#FFFFFF"
+     ],
+     "data": [
+      "#57EBF9",
+      "#6EC197"
+     ],
+     "accent": "#F2A8A0",
+     "textOnAccent": "#000000",
+     "highlight": "#57EBF9",
+     "textOnBackground": "#FFFFFF",
+     "statusOk": "#99CCFF",
+     "statusWarning": "#FFBB33",
+     "statusAlert": "#FF2200"
+    },
+    "confidence": "fan"
+   },
+   "scriptFont": "RomulanGlyphs",
+   "confidence": "fan"
+  },
+  "cardassian": {
+   "frame": {
+    "shape": "elliptical",
+    "headingFont": null,
+    "colours": {
+     "background": "#000000",
+     "structure": [
+      "#4FC8E0",
+      "#D79B5D",
+      "#9A4B5A"
+     ],
+     "textOnStructure": [
+      "#000000",
+      "#000000",
+      "#FFFFFF"
+     ],
+     "data": [
+      "#3EECE0",
+      "#E8F060"
+     ],
+     "accent": "#D98088",
+     "textOnAccent": "#000000",
+     "highlight": "#71E0F7",
+     "textOnBackground": "#FFFFFF",
+     "statusOk": "#99CCFF",
+     "statusWarning": "#FFBB33",
+     "statusAlert": "#FF2200"
+    },
+    "confidence": "fan"
+   },
+   "scriptFont": "CardassianGlyphs",
+   "confidence": "fan"
+  },
+  "dominion": {
+   "frame": {
+    "shape": "arched",
+    "headingFont": null,
+    "colours": {
+     "background": "#000000",
+     "structure": [
+      "#8A80D8",
+      "#AC669B",
+      "#464082"
+     ],
+     "textOnStructure": [
+      "#000000",
+      "#000000",
+      "#FFFFFF"
+     ],
+     "data": [
+      "#3FB8E8",
+      "#E0A868"
+     ],
+     "accent": "#C080D0",
+     "textOnAccent": "#000000",
+     "highlight": "#B0A8F0",
+     "textOnBackground": "#FFFFFF",
+     "statusOk": "#99CCFF",
+     "statusWarning": "#FFBB33",
+     "statusAlert": "#FF2200"
+    },
+    "confidence": "fan"
+   },
+   "scriptFont": "DominionGlyphs",
+   "confidence": "fan"
+  },
+  "borg": {
+   "frame": {
+    "shape": "radial",
+    "headingFont": null,
+    "colours": {
+     "background": "#000000",
+     "structure": [
+      "#20C020",
+      "#009800",
+      "#004800"
+     ],
+     "textOnStructure": [
+      "#000000",
+      "#000000",
+      "#FFFFFF"
+     ],
+     "data": [
+      "#5CF060",
+      "#E8D040"
+     ],
+     "accent": "#D8D060",
+     "textOnAccent": "#000000",
+     "highlight": "#5CF060",
+     "textOnBackground": "#FFFFFF",
+     "statusOk": "#99CCFF",
+     "statusWarning": "#FFBB33",
+     "statusAlert": "#FF2200"
+    },
+    "confidence": "fan"
+   },
+   "scriptFont": "BorgGlyphs",
+   "confidence": "fan"
+  },
+  "voth": {
+   "frame": {
+    "shape": "rounded",
+    "headingFont": null,
+    "colours": {
+     "background": "#000000",
+     "structure": [
+      "#3FB8A0",
+      "#5A9BE0",
+      "#2A6E78"
+     ],
+     "textOnStructure": [
+      "#000000",
+      "#000000",
+      "#FFFFFF"
+     ],
+     "data": [
+      "#8FE0C8",
+      "#9FC8FF"
+     ],
+     "accent": "#5FD38A",
+     "textOnAccent": "#000000",
+     "highlight": "#3FB8A0",
+     "textOnBackground": "#FFFFFF",
+     "statusOk": "#99CCFF",
+     "statusWarning": "#FFBB33",
+     "statusAlert": "#FF2200"
+    },
+    "confidence": "fan"
+   },
+   "scriptFont": "VothGlyphs",
+   "confidence": "fan"
+  },
+  "gorn": {
+   "frame": {
+    "shape": "stone",
+    "headingFont": null,
+    "colours": {
+     "background": "#000000",
+     "structure": [
+      "#B4954B",
+      "#AA8050",
+      "#5A4A28"
+     ],
+     "textOnStructure": [
+      "#000000",
+      "#000000",
+      "#FFFFFF"
+     ],
+     "data": [
+      "#20E040",
+      "#F6CD18"
+     ],
+     "accent": "#20D040",
+     "textOnAccent": "#000000",
+     "highlight": "#40FF50",
+     "textOnBackground": "#FFFFFF",
+     "statusOk": "#99CCFF",
+     "statusWarning": "#FFBB33",
+     "statusAlert": "#FF2200"
+    },
+    "confidence": "fan"
+   },
+   "scriptFont": "GornGlyphs",
+   "confidence": "fan"
+  },
+  "ferengi": {
+   "frame": {
+    "shape": "bezel",
+    "headingFont": null,
+    "colours": {
+     "background": "#000000",
+     "structure": [
+      "#C8783E",
+      "#3485BC",
+      "#7A4A2E"
+     ],
+     "textOnStructure": [
+      "#000000",
+      "#000000",
+      "#FFFFFF"
+     ],
+     "data": [
+      "#E96793",
+      "#31AD67"
+     ],
+     "accent": "#E96793",
+     "textOnAccent": "#000000",
+     "highlight": "#F0A060",
+     "textOnBackground": "#FFFFFF",
+     "statusOk": "#99CCFF",
+     "statusWarning": "#FFBB33",
+     "statusAlert": "#FF2200"
+    },
+    "confidence": "fan"
+   },
+   "scriptFont": "FerengiGlyphs",
+   "confidence": "fan"
+  },
+  "tholian": {
+   "accent": "#FF8C42",
+   "textOnAccent": "#000000",
+   "scriptFont": "TholianGlyphs",
+   "confidence": "proposed"
+  },
+  "undine": {
+   "accent": "#D99BE0",
+   "textOnAccent": "#000000",
+   "confidence": "proposed"
+  },
+  "breen": {
+   "accent": "#9FC3D9",
+   "textOnAccent": "#000000",
+   "confidence": "proposed"
+  }
+ }
+}

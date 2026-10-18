@@ -1,0 +1,139 @@
+{
+  "about": "Nathan's answers to the hull review (data/hull-review.md). 'groups' apply to every unclear hull matching the pattern; 'decisions' answer single hulls, keyed ERA/hull_id, and win over everything else. 'escort' makes a hull a variant on its carrier's page (from DRONE_SetupHostClass); 'merge' collapses hulls of the same era, faction and name into one entry with variants; 'variantOf' + 'kind' attach a hull to another hull's page. 'showOnlyOn' {month, day} limits when the app shows the entry (and its variants).",
+  "answered": "2026-10-17",
+  "groups": [
+    {
+      "group": "Construction Bees",
+      "pattern": "_constructor\\d*b?$",
+      "include": true,
+      "merge": true,
+      "note": "Yes; one entry per race and era. Many share a HOD (often the race's Dilithium Miner), so reuse that render."
+    },
+    {
+      "group": "Carrier drones",
+      "pattern": "drone\\d*$",
+      "include": true,
+      "escort": true,
+      "note": "Yes; on the carrier's page. Drones sharing a model collapse into one escort."
+    },
+    {
+      "group": "Flagships",
+      "pattern": "_flagship$",
+      "include": true
+    },
+    {
+      "group": "Outposts",
+      "pattern": "_outpost$",
+      "include": true
+    },
+    {
+      "group": "Tal'Shiar spies",
+      "pattern": "_spy$",
+      "include": false
+    },
+    {
+      "group": "Starbases and civilian stations",
+      "pattern": "_starbase$|_CIV_",
+      "include": true
+    }
+  ],
+  "decisions": {
+    "TNG/fed_TNG_brisbane": {
+      "include": true,
+      "showOnlyOn": {
+        "month": 7,
+        "day": 28
+      },
+      "note": "Yes, but shown only on 28 July, matching the in-game easter egg."
+    },
+    "TNG/fed_TNG_brisbane_alpha": {
+      "variantOf": "fed_TNG_brisbane",
+      "kind": "separation",
+      "note": "Brisbane separation part; shown only on 28 July with the Brisbane."
+    },
+    "TNG/fed_TNG_brisbane_beta": {
+      "variantOf": "fed_TNG_brisbane",
+      "kind": "separation",
+      "note": "Brisbane separation part; shown only on 28 July with the Brisbane."
+    },
+    "TNG/fed_TNG_brisbane_gamma": {
+      "variantOf": "fed_TNG_brisbane",
+      "kind": "separation",
+      "note": "Brisbane separation part; shown only on 28 July with the Brisbane."
+    },
+    "ENT/fed_ENT_VUL_dkyr_shuttle": {
+      "variantOf": "fed_ENT_VUL_dkyr",
+      "kind": "separation",
+      "note": "Treat like the Galaxy saucer and Prometheus sections."
+    },
+    "ENT/fed_ENT_discovery": {
+      "include": true
+    },
+    "ENT/fed_ENT_minuteman": {
+      "include": true
+    },
+    "ENT/fed_ENT_poseidon": {
+      "include": true
+    },
+    "ENT/fed_ENT_yorktown": {
+      "include": true
+    },
+    "ENT/rom_ENT_jorek": {
+      "include": true
+    },
+    "TMP/fed_TMP_enterprise": {
+      "include": true
+    },
+    "TMP/fed_TMP_regula": {
+      "include": true
+    },
+    "TMP/fed_TMP_reliant": {
+      "include": true
+    },
+    "TMP/fed_TNG_ambassador_refit": {
+      "variantOf": "fed_TMP_ambassador",
+      "kind": "refit",
+      "note": "A variant you can swap to on the Ambassador's page."
+    },
+    "TMP/rom_TMP_starglider": {
+      "include": true
+    },
+    "TNG/brg_TNG_shipyard": {
+      "include": false
+    },
+    "TNG/brg_TNG_shipyard_S": {
+      "include": false
+    },
+    "TNG/fed_TNG_fighter": {
+      "include": true
+    },
+    "TNG/fed_TNG_matilda": {
+      "include": false
+    },
+    "TNG/fed_TNG_premonition": {
+      "include": true
+    },
+    "TNG/fed_TNG_typhon": {
+      "include": true
+    },
+    "TNG/rom_TNG_hatham": {
+      "include": false
+    },
+    "TNG/vth_TNG_citadel": {
+      "include": true
+    },
+    "TOS/fed_TOS_oberth": {
+      "include": false
+    },
+    "TNG/car_TNG_norin1": {
+      "variantOf": "car_TNG_hutet",
+      "kind": "escort",
+      "note": "The Hutet's Norin escorts, treated like the carrier drones."
+    },
+    "TNG/car_TNG_norin2": {
+      "variantOf": "car_TNG_hutet",
+      "kind": "escort",
+      "note": "The Hutet's Norin escorts, treated like the carrier drones."
+    }
+  }
+}

@@ -1,0 +1,300 @@
+{
+  "$comment": "Hand-authored theme palettes. 'highlight' (optional, default the first structure colour) marks titles, the selected item and values a variant changes. for the Dex, from on-screen research (see the Design Language wiki page). pipeline/build_data.py checks every text colour against WCAG AA and writes app/assets/data/themes.json. Each theme names its sources; 'confidence' is canon (seen on screen and documented), fan (fan reconstructions of on-screen graphics) or proposed (our choice where nothing is documented). 'headingFont' (optional) names a bundled font family for frame lettering, buttons and titles; body text always stays in the platform font. 'scriptFont' (optional, factions) names the faction's own script, used only to decorate: the screen title is repeated in it, hidden from screen readers.",
+  "base": {
+    "background": "#000000",
+    "statusOk": "#99CCFF",
+    "statusWarning": "#FFBB33",
+    "statusAlert": "#FF2200"
+  },
+  "eras": {
+    "ENT": {
+      "shape": "panel",
+      "structure": [
+        "#7899C6",
+        "#C2C6CC",
+        "#455590"
+      ],
+      "data": [
+        "#79C9E4",
+        "#FFE139"
+      ],
+      "accent": "#E36F62",
+      "highlight": "#FFE139",
+      "confidence": "fan",
+      "sources": [
+        "lcars.org.uk recreations of on-screen panels (data/reference/www.lcars.org.uk, sorted by pipeline/sort_reference.py; coloured pixels sampled): 152 NX-01 stills; slate blue and cyan frames with red, pink and yellow readout tabs and small corner dots",
+        "Peter Thomas, 50 Years of Star Trek Interfaces (Enterprise: greys with blue and yellow; simpler, boxier, fewer curves)"
+      ],
+      "headingFont": "PathwayGothic"
+    },
+    "TOS": {
+      "shape": "console",
+      "structure": [
+        "#F2C520",
+        "#31B67E",
+        "#D81B14"
+      ],
+      "data": [
+        "#F2C520",
+        "#31B67E"
+      ],
+      "accent": "#F04A3E",
+      "confidence": "fan",
+      "sources": [
+        "Peter Thomas, 50 Years of Star Trek Interfaces (TOS: square windows of blinking red, green and yellow lights)"
+      ],
+      "headingFont": "TrekClassic"
+    },
+    "TMP": {
+      "shape": "film",
+      "structure": [
+        "#2E86F0",
+        "#5FB4F0",
+        "#1F4FB8"
+      ],
+      "data": [
+        "#5FE08A",
+        "#94FFFF"
+      ],
+      "accent": "#20C050",
+      "highlight": "#7CC3FB",
+      "confidence": "fan",
+      "sources": [
+        "Michael Okuda interview (Yahoo, 2025): proposed circular, radial displays for the film-era bridge",
+        "Reference images in data/reference/tmp (renders of the Star Trek IV Enterprise-A bridge consoles; coloured pixels sampled): blue about 36%, green about 35%, sky blue about 25%; green radial gauges and sector rings, light-blue button rows, black panels with thin cream outlines",
+        "Star Trek: Starfleet Command II (2000), Federation interface sprites decoded from the game disc (data/reference/tmp/sfc2_fed): bright blue outlined panels 73% (#0052DE, glowing #009CFF), green oval lamps 10%, cyan touches; rounded panels, ship schematics ringed with green dots"
+      ],
+      "headingFont": "TrekMovie"
+    },
+    "TNG": {
+      "shape": "lcars",
+      "structure": [
+        "#EB943A",
+        "#EA9C72",
+        "#FFCC99"
+      ],
+      "data": [
+        "#8899FF",
+        "#99CCFF"
+      ],
+      "accent": "#BAA4E5",
+      "confidence": "canon",
+      "sources": [
+        "TheLCARS.com Classic palette (TNG/DS9)"
+      ],
+      "headingFont": "LeagueGothic"
+    }
+  },
+  "factions": {
+    "federation": {
+      "$comment": "Uses its era's frame unchanged."
+    },
+    "terran": {
+      "accent": "#D4AF37",
+      "confidence": "proposed",
+      "sources": [
+        "Decided 2026-10-17: the TOS Federation theme with a tweaked accent; gold for the Terran Empire's emblem"
+      ]
+    },
+    "klingon": {
+      "frame": {
+        "shape": "angular",
+        "structure": [
+          "#F05A28",
+          "#EB670E",
+          "#8D303B"
+        ],
+        "data": [
+          "#F3AF26",
+          "#FB6116"
+        ],
+        "accent": "#F3AF26",
+        "highlight": "#FB6116",
+        "headingFont": "KlingonDagger"
+      },
+      "confidence": "fan",
+      "sources": [
+        "lcars.org.uk recreations of on-screen panels (data/reference/www.lcars.org.uk, sorted by pipeline/sort_reference.py; coloured pixels sampled): 48 Klingon screens; red 36%, orange 29%, crimson 19%, gold; octagon frames, chevrons, triangle grids",
+        "Star Trek Online, Legacy of Romulus dev blog #8: orange interactive elements, maroon window frames",
+        "Memory Alpha, Viewscreen: Klingon viewscreens and displays have angular shapes"
+      ],
+      "scriptFont": "KlingonGlyphs"
+    },
+    "romulan": {
+      "frame": {
+        "shape": "slanted",
+        "structure": [
+          "#20C8D0",
+          "#23A76E",
+          "#1F4FC0"
+        ],
+        "data": [
+          "#57EBF9",
+          "#6EC197"
+        ],
+        "accent": "#F2A8A0",
+        "highlight": "#57EBF9",
+        "headingFont": "RomulanEagle"
+      },
+      "confidence": "fan",
+      "sources": [
+        "lcars.org.uk recreations of on-screen panels (data/reference/www.lcars.org.uk, sorted by pipeline/sort_reference.py; coloured pixels sampled): 14 Romulan screens; cyan, teal and blue with green and salmon-pink touches; outlined V-shapes and wedges"
+      ],
+      "scriptFont": "RomulanGlyphs"
+    },
+    "cardassian": {
+      "frame": {
+        "shape": "elliptical",
+        "structure": [
+          "#4FC8E0",
+          "#D79B5D",
+          "#9A4B5A"
+        ],
+        "data": [
+          "#3EECE0",
+          "#E8F060"
+        ],
+        "accent": "#D98088",
+        "highlight": "#71E0F7"
+      },
+      "confidence": "fan",
+      "sources": [
+        "lcars.org.uk recreations of on-screen panels (data/reference/www.lcars.org.uk, sorted by pipeline/sort_reference.py; coloured pixels sampled): 34 Cardassian screens; cyan and teal, tan-gold, rose and red; triangles, trapezoids and ellipses",
+        "Reference images in data/reference/cardassian (fan recreations): cyan, gold, dusty rose, pale yellow and lilac",
+        "LCARS Fandom, Cardassian Interface (Herman Zimmerman): ellipses, triangles and trapezoids rather than squares and rectangles"
+      ],
+      "scriptFont": "CardassianGlyphs"
+    },
+    "dominion": {
+      "frame": {
+        "shape": "arched",
+        "structure": [
+          "#8A80D8",
+          "#AC669B",
+          "#464082"
+        ],
+        "data": [
+          "#3FB8E8",
+          "#E0A868"
+        ],
+        "accent": "#C080D0",
+        "highlight": "#B0A8F0"
+      },
+      "confidence": "fan",
+      "sources": [
+        "lcars.org.uk recreations of on-screen panels (data/reference/www.lcars.org.uk, sorted by pipeline/sort_reference.py; coloured pixels sampled): only 2 Dominion screens; indigo-lavender with magenta, cyan and gold; arched (keyhole) frames and chevron pillars. Thin",
+        "Ex Astris Scientia, Dominion emblem: violet with cyan or green"
+      ],
+      "scriptFont": "DominionGlyphs"
+    },
+    "borg": {
+      "frame": {
+        "shape": "radial",
+        "structure": [
+          "#20C020",
+          "#009800",
+          "#004800"
+        ],
+        "data": [
+          "#5CF060",
+          "#E8D040"
+        ],
+        "accent": "#D8D060",
+        "highlight": "#5CF060"
+      },
+      "confidence": "fan",
+      "sources": [
+        "lcars.org.uk recreations of on-screen panels (data/reference/www.lcars.org.uk, sorted by pipeline/sort_reference.py; coloured pixels sampled): Voyager Borg screens; bright greens with olive and gold crosshairs, nodes and rings",
+        "Reference images in data/reference/borg (LCARS 47 Borg theme and fan interfaces)"
+      ],
+      "scriptFont": "BorgGlyphs"
+    },
+    "voth": {
+      "frame": {
+        "shape": "rounded",
+        "structure": [
+          "#3FB8A0",
+          "#5A9BE0",
+          "#2A6E78"
+        ],
+        "data": [
+          "#8FE0C8",
+          "#9FC8FF"
+        ],
+        "accent": "#5FD38A"
+      },
+      "confidence": "fan",
+      "sources": [
+        "StarTrek.com, Guest Blog: Designing the Voth (Star Trek Online): glowing panels mainly blue and green; streamlined, curved forms with few sharp corners"
+      ],
+      "scriptFont": "VothGlyphs"
+    },
+    "gorn": {
+      "frame": {
+        "shape": "stone",
+        "structure": [
+          "#B4954B",
+          "#AA8050",
+          "#5A4A28"
+        ],
+        "data": [
+          "#20E040",
+          "#F6CD18"
+        ],
+        "accent": "#20D040",
+        "highlight": "#40FF50"
+      },
+      "confidence": "fan",
+      "sources": [
+        "Star Trek: Starfleet Command II (Taldren/Interplay, 2000), Gorn interface sprites decoded from the game disc's sprites.q3 (data/reference/gorn, data/reference/sfc2): glowing green on khaki-bronze stone-textured panels with chamfered corners, gold-yellow touches; green 33%, bronze 26%, khaki-gold 18%, deep green 16%"
+      ],
+      "scriptFont": "GornGlyphs"
+    },
+    "ferengi": {
+      "frame": {
+        "shape": "bezel",
+        "structure": [
+          "#C8783E",
+          "#3485BC",
+          "#7A4A2E"
+        ],
+        "data": [
+          "#E96793",
+          "#31AD67"
+        ],
+        "accent": "#E96793",
+        "highlight": "#F0A060"
+      },
+      "confidence": "fan",
+      "sources": [
+        "lcars.org.uk recreations of on-screen panels (data/reference/www.lcars.org.uk, sorted by pipeline/sort_reference.py; coloured pixels sampled): only 4 Ferengi screens; bronze casings, blue and magenta-pink lettering, green bars; slanted dark PADDs. Thin"
+      ],
+      "scriptFont": "FerengiGlyphs"
+    },
+    "tholian": {
+      "accent": "#FF8C42",
+      "confidence": "proposed",
+      "sources": [
+        "Not researched: era frame with an orange accent"
+      ],
+      "scriptFont": "TholianGlyphs"
+    },
+    "undine": {
+      "accent": "#D99BE0",
+      "confidence": "proposed",
+      "sources": [
+        "Not researched: era frame with a violet accent"
+      ]
+    },
+    "breen": {
+      "accent": "#9FC3D9",
+      "confidence": "proposed",
+      "sources": [
+        "Not researched: era frame with an ice-blue accent"
+      ]
+    },
+    "unaligned": {
+      "$comment": "Uses its era's frame unchanged."
+    }
+  }
+}

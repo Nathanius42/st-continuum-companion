@@ -1,0 +1,84 @@
+# Continuum Dex builds (#522): every push to main builds each target and keeps the
+# outputs as pipeline artefacts. See docs/Release.md for the one-time setup.
+#
+# The ship data (app/assets/data) is committed, so the pipeline builds the app only;
+# the Python pipeline needs the mod's SVN working copy and runs on a developer's PC.
+
+trigger:
+  branches:
+    include: [main]
+
+pr: none
+
+variables:
+  flutterVersion: '3.47.7'
+  # Set to true once the upload keystore is a secure file (#526).
+  androidReleaseSigning: 'false'
+
+stages:
+- stage: build
+  jobs:
+
+  # Windows: tests, the release build, the portable zip and the NSIS 3 installer (#539, #553, #608).
+  - job: windows
+    pool: { vmImage: windows-latest }
+    steps:
+    - pwsh: |
+        git clone --depth 1 --branch $(flutterVersion) https://github.com/flutter/flutter.git $(Agent.ToolsDirectory)/flutter
+        echo "##vso[task.prependpath]$(Agent.ToolsDirectory)/flutter/bin"
+      displayName: Install Flutter $(flutterVersion)
+    - pwsh: flutter test
+      workingDirectory: app
+      displayName: Widget tests
+    - pwsh: choco install nsis --no-progress -y
+      displayName: Install NSIS 3
+    - pwsh: ./tools/package_windows.ps1 -Flutter flutter -Makensis 'C:\Program Files (x86)\NSIS\makensis.exe'
+      displayName: Build, zip and installer
+    - publish: dist
+      artifact: windows
+      displayName: Publish Windows downloads
+
+  # Android: the release APK (#523), signed with the upload key once it's set up (#526).
+  - job: android
+    pool: { vmImage: windows-latest }
+    steps:
+    - pwsh: |
+        git clone --depth 1 --branch $(flutterVersion) https://github.com/flutter/flutter.git $(Agent.ToolsDirectory)/flutter
+        echo "##vso[task.prependpath]$(Agent.ToolsDirectory)/flutter/bin"
+        echo "##vso[task.setvariable variable=JAVA_HOME]$(JAVA_HOME_17_X64)"
+      displayName: Install Flutter $(flutterVersion)
+    - task: DownloadSecureFile@1
+      name: keystore
+      condition: eq(variables.androidReleaseSigning, 'true')
+      inputs: { secureFile: continuum-dex-upload.jks }
+      displayName: Download the upload keystore
+    - pwsh: |
+        @"
+        storeFile=$(keystore.secureFilePath)
+        storePassword=$env:STORE_PASSWORD
+        keyAlias=upload
+        keyPassword=$env:KEY_PASSWORD
+        "@ | Set-Content app/android/key.properties
+      condition: eq(variables.androidReleaseSigning, 'true')
+      env:
+        STORE_PASSWORD: $(androidStorePassword)
+        KEY_PASSWORD: $(androidKeyPassword)
+      displayName: Write key.properties
+    - pwsh: flutter build apk --release --split-per-abi
+      workingDirectory: app
+      displayName: Build release APKs
+    - publish: app/build/app/outputs/flutter-apk
+      artifact: android
+      displayName: Publish APKs
+
+  # iOS: proves the target compiles before any Apple account exists (#540).
+  - job: ios
+    pool: { vmImage: macOS-latest }
+    steps:
+    - bash: |
+        git clone --depth 1 --branch $(flutterVersion) https://github.com/flutter/flutter.git $(Agent.ToolsDirectory)/flutter
+        echo "##vso[task.prependpath]$(Agent.ToolsDirectory)/flutter/bin"
+      displayName: Install Flutter $(flutterVersion)
+    - bash: flutter build ios --release --no-codesign
+      workingDirectory: app
+      displayName: Unsigned iOS build
