@@ -68,13 +68,13 @@ The first release, built from *Star Trek: Continuum Remastered* revision 4024.
 - **Phone and desktop.** Touch on a phone, mouse and keyboard in a window (Tab, arrows, Enter, Escape to go back, the wheel to turn a ship). Wide windows put the ship list and the ship page side by side.
 - **Accessibility.** Screen reader labels throughout, text up to 200% without clipping, and reduced motion respected.
 - **Sound.** The STC website's LCARS beeps, with a switch to turn them off.
-- **Typography.** Each era and faction in its own lettering, and the alien empires' scripts as decoration.
+- **Typography.** Each era and faction in its own lettering: League Gothic for TNG LCARS, Pathway Gothic One for ENT, the mod's title fonts for TOS and TMP, Klingon Dagger and Romulan Eagle for those empires, and each alien empire's script beside its screen titles.
 
 ### Known issues
 
 - **Unsigned Windows installer.** SmartScreen warns on first run, as above.
-- **Fonts.** The faces close to the shows' own: League Gothic for TNG LCARS (in place of the commercial Swiss 911), Pathway Gothic One for ENT, the mod's title fonts for TOS and TMP, Klingon Dagger and Romulan Eagle for those empires, and each faction's own script beside its screen titles. Cardassian, Dominion and the other faction frames use the system font.
-- **Not yet checked by hand:** TalkBack on a phone (#503), and scrolling speed on a phone with the performance overlay (#504, #505).
+- **Fonts.** The Cardassian, Dominion and other faction interfaces without a font of their own use the system font for their titles.
+- **Not yet checked by hand:** TalkBack on a phone, and scrolling speed on a phone with the performance overlay.
 
 ### Credits and notice
 
